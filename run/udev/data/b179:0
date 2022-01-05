@@ -1,0 +1,9 @@
+S:disk/by-id/mmc-4FPD3R_0xe316460d
+S:disk/by-path/platform-mmci-omap-hs.1
+W:1
+I:1958526
+E:ID_NAME=4FPD3R
+E:ID_PART_TABLE_TYPE=gpt
+E:ID_PATH=platform-mmci-omap-hs.1
+E:ID_PATH_TAG=platform-mmci-omap-hs_1
+E:ID_SERIAL=0xe316460d

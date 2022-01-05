@@ -1,0 +1,4 @@
+RG002
+40
+<DATA>
+cp -f /tmp/resolv.conf /var/run

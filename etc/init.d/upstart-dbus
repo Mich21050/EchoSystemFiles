@@ -1,0 +1,10 @@
+#! /bin/sh
+# Workaround to connect upstart to dbus.
+
+# Upstart expects to be kill'd with USR1 when dbus is available.
+# This is only necessary while dbus is running in sysvinit compatibility mode.
+
+# Tell upstart to connect to dbus
+kill -USR1 1
+
+exit 0

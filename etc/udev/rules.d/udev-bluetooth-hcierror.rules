@@ -1,0 +1,1 @@
+ACTION=="change", SUBSYSTEM=="bluetooth", ENV{HCI_ERROR}=="FRAME_REASSEMBLY", RUN+="/usr/local/bin/bt_hci_error"

@@ -1,0 +1,16 @@
+load-module module-lab126-sink rate=48000 channels=2 channel_map=front-left,front-right file="/QSpeakerIn.shm" powerfile="/BPlaybackAvgPower.shm" fragment_usecs=16000 minimum_full_fragments=3 static_output_latency_usecs=136000
+# load-module for Pancake only
+.ifexists /var/local/system/pancake
+load-module module-suspend-on-idle idle_timeout=20 suspended_timeout=12
+.endif
+set-default-sink lab126-sink
+load-module module-lab126-audiod fileCmd="/AudiodCmd.shm"
+load-module module-lab126-source rate=16000 channels=1 channel_map=front-center file="/BVoIPMic.shm"
+set-default-source lab126-source
+#SCO-over-PCM:
+load-module module-bluetooth-discover sco_source_module="module-lab126-bt-source" sco_sink_module="module-lab126-bt-sink"
+#SCO-over-HCI/UART:
+#load-module module-bluetooth-discover
+load-module module-bluetooth-policy
+#handle automatic sink switching on bluetooth connection
+load-module module-switch-on-connect

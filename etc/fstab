@@ -1,0 +1,6 @@
+rootfs               /                    auto       defaults              1  1
+proc                 /proc                proc       defaults              0  0
+devpts               /dev/pts             devpts     mode=0620,gid=5       0  0
+tmpfs                /mnt/volatile        tmpfs      defaults              0  0
+tmpfs                /dev/shm             tmpfs      mode=0777,size=10485760 0  0
+/dev/zram0           swap                 swap       defaults                0  0

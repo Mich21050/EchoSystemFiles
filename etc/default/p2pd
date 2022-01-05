@@ -1,0 +1,17 @@
+# P2PD Configuration Variables
+
+P2P_STOP_SCRIPT=/usr/local/bin/p2p-stop-steps.sh
+P2P_START_SCRIPT=/usr/local/bin/p2p-start-steps.sh
+
+WPACLI=/usr/bin/wpa_cli
+IFCONFIG=/sbin/ifconfig
+P2P=/usr/local/bin/p2p
+IW=/usr/sbin/iw
+LIPC_SET=/usr/local/bin/lipc-set-prop
+
+P2PINTERFACE=`$WPACLI -i p2p0 interface | grep p2p-`
+
+OOBED_UPSTART_JOB=oobed
+OOBE_SERVER_ADDR=`get-dynconf-value p2p.ipaddress`
+
+FIREWALL_SETUP=/usr/local/bin/setup-firewall.sh

@@ -1,0 +1,8 @@
+# Default for /etc/init.d/udev
+
+# Comment this out to disable device cache
+# TODO: don't manipulate root filesystem
+# DEE-7687 [Tech Debt] Do not store in /etc
+DEVCACHE="/etc/dev.tar"
+# To track successful untarring of cached /dev
+CACHED_DEV_USED="/tmp/cached_dev"

@@ -1,0 +1,40 @@
+#!/bin/bash
+
+###
+#
+# Copyright (c) 2014
+# This script has been sourced from OpenEmbedded. Same copying and licensing apply.
+# Link: https://github.com/openembedded/oe-core/blob/master/meta/recipes-core/udev/udev/init
+# All rights reserved.
+###
+#
+# Description: Read Cached dev flag and start udevadm accordingly to request udev events.
+#              Create symlinks and run depmod
+###
+
+[ -f /etc/default/udev ] && . /etc/default/udev
+[ -f /etc/default/rcS ] && . /etc/default/rcS
+
+# Print commands in debug mode
+[ "$VERBOSE" != "no" ] && set -x
+
+# Read the flag if it exists
+if [ "$CACHED_DEV_USED" != "" ]; then
+    [ -e $CACHED_DEV_USED ] && CACHED_DEV_FLAG=$(cat $CACHED_DEV_USED)
+fi
+
+/usr/bin/udevadm control --env=STARTUP=1
+
+if [ "$CACHED_DEV_FLAG" != "" ];then
+    /usr/bin/udevadm trigger --action=add --subsystem-nomatch=tty --subsystem-nomatch=mem \
+    --subsystem-nomatch=vc --subsystem-nomatch=vtconsole --subsystem-nomatch=misc \
+    --subsystem-nomatch=dcon --subsystem-nomatch=pci_bus --subsystem-nomatch=graphics \
+    --subsystem-nomatch=backlight --subsystem-nomatch=video4linux --subsystem-nomatch=platform
+    /usr/bin/udevadm settle --timeout=3
+    udevadm control --env=STARTUP=
+else
+   /usr/bin/udevadm trigger --action=add
+   /usr/bin/udevadm settle
+fi
+
+exit 0

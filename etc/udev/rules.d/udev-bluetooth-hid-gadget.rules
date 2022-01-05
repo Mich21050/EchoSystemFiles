@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="input", KERNEL=="event*", ATTRS{type}=="ACL", SYMLINK+="input/by-path/hci0-%s{address}-event-gadgets"

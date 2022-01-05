@@ -1,0 +1,18 @@
+extradns="8.8.8.8 208.67.220.220"
+
+# Convenience function to log messages into syslog
+LOGGER ()
+{
+    logger -p local4.info -t "udhcpc: I 51addextradns:setup:" $@;
+}
+
+DNS_RESOLVE_FILE=/etc/resolv.conf
+DNS_RESOLUTION_TIMEOUT=3
+
+for e in $extradns; do
+	echo "adding dns $e" | LOGGER
+	echo "nameserver $e" >> ${DNS_RESOLVE_FILE}
+done
+
+echo "Configuring options for nameserver timeout" | LOGGER
+echo "options timeout:${DNS_RESOLUTION_TIMEOUT}" >> ${DNS_RESOLVE_FILE}

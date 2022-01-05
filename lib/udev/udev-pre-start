@@ -1,0 +1,108 @@
+#!/bin/bash
+
+###
+#
+# Copyright (c) 2014
+# This script has been sourced from OpenEmbedded. Same copying and licensing apply.
+# Link: https://github.com/openembedded/oe-core/blob/master/meta/recipes-core/udev/udev/init
+# All rights reserved.
+###
+#
+# Description:
+# Start udevd, untar cache and populate /dev. If untar is successful, set '1' in CACHED_DEV_USED
+#
+###
+
+export TZ=/etc/localtime
+
+[ -d /sys/class ] || exit 1
+[ -r /proc/mounts ] || exit 1
+[ -x /lib/udev/udevd ] || exit 1
+[ -f /etc/default/udev ] && . /etc/default/udev
+[ -f /etc/default/rcS ] && . /etc/default/rcS
+
+# Print commands in debug mode
+[ "$VERBOSE" != "no" ] && set -x
+
+readfiles () {
+   READDATA=""
+   for filename in $@; do
+       if [ -r $filename ]; then
+           while read line; do
+                   READDATA="$READDATA$line"
+           done < $filename
+       fi
+   done
+}
+
+kill_udevd () {
+    pid=`pidof -x /lib/udev/udevd`
+    [ -n "$pid" ] && /bin/kill $pid
+}
+
+export ACTION=add
+
+# Propagate /dev from /sys
+# Check for required devtmpfs before trying to start udev and
+# mount a no-existant fs.
+if ! grep -q devtmpfs /proc/filesystems
+then
+    echo "Missing devtmpfs, which is required for udev to run";
+    echo "Halting..."
+    halt
+fi
+
+# mount the devtmpfs on /dev, if not already done
+LANG=C awk '$2 == "/dev" && ($3 == "devtmpfs") { exit 1 }' /proc/mounts && {
+    mount -n -o mode=0755 -t devtmpfs none "/dev"
+}
+
+[ -e /dev/pts ] || mkdir -m 0755 /dev/pts
+[ -e /dev/shm ] || mkdir -m 1777 /dev/shm
+# the automount rule for udev needs /tmp directory available, as /tmp is a symlink
+# to /var/tmp which in turn is a symlink to /var/volatile/tmp, we need to make sure
+# /var/volatile/tmp directory to be available.
+mkdir -p /var/volatile/tmp
+
+if [ "$CACHED_DEV_USED" != "" ]; then
+   # Remove any old cached dev flag file
+   [ -e $CACHED_DEV_USED ] && rm -f $CACHED_DEV_USED
+   # Create a new tmp file to write into
+   touch $CACHED_DEV_USED
+fi
+
+# Unpacking Cache
+# A list of files which are used as a criteria to judge whether the udev cache could be reused.
+CMP_FILE_LIST="/proc/cmdline /proc/devices /proc/atags"
+if [ "$DEVCACHE" != "" ]; then
+    if [ -e $DEVCACHE ] && [ -e /etc/udev/udev.cache ]; then
+        readfiles $CMP_FILE_LIST
+        NEWDATA="$READDATA"
+        readfiles /etc/udev/udev.cache
+        OLDDATA="$READDATA"
+        if [ "$OLDDATA" = "$NEWDATA" ]; then
+            (cd /; tar xf $DEVCACHE > /dev/null 2>&1)
+            # Set the flag in param file for the post script
+            [ -e $CACHED_DEV_USED ] && echo "1" > $CACHED_DEV_USED
+            [ "$VERBOSE" != "no" ] && echo "udev: using cache file $DEVCACHE"
+        else
+            # Output detailed reason why the cached /dev is not used
+            if [ "$VERBOSE" != "no" ]; then
+                echo "udev: udev cache not used"
+                echo "udev: $CMP_FILE_LIST Files are used to decide if udev-cache is valid"
+                echo "udev: olddata: $OLDDATA"
+                echo "udev: newdata: $NEWDATA"
+            fi
+        fi
+    else
+        echo "No udev Cache Found. Continue booting.."
+    fi
+fi
+
+# make_extra_nodes
+kill_udevd > "/dev/null" 2>&1
+
+# trigger the sorted events
+echo -e '\000\000\000\000' > /proc/sys/kernel/hotplug
+
+exit 0

@@ -1,0 +1,4 @@
+RG002
+40
+<DATA>
+ifconfig wlan0 0.0.0.0

@@ -1,0 +1,96 @@
+#!/bin/sh
+
+# udhcpc script edited by Tim Riker <Tim@Rikers.org>
+
+[ -z "$1" ] && echo "Error: should be called from udhcpc" && exit 1
+
+WLAN_INTF='wlan0'
+RESOLV_CONF="/etc/resolv.conf"
+[ -n "$broadcast" ] && BROADCAST="broadcast $broadcast"
+[ -n "$subnet" ] && NETMASK="netmask $subnet"
+
+# return 0 if root is mounted on a network filesystem
+root_is_nfs() {
+	grep -qe '^/dev/root.*\(nfs\|smbfs\|ncp\|coda\) .*' /proc/mounts
+}
+
+# Convenience function to log messages into syslog
+LOGGER ()
+{
+    logger -p local4.info -t "udhcpc: I 50default:setup:" $@;
+}
+
+have_bin_ip=0
+if [ -x /bin/ip ]; then
+	have_bin_ip=1
+fi
+
+case "$1" in
+	deconfig)
+		if ! root_is_nfs ; then
+			if [ $have_bin_ip -eq 1 ]; then
+				ip addr flush dev $interface
+				ip link set dev $interface up
+            else
+				/sbin/ifconfig $interface 0.0.0.0
+			fi
+		fi
+		;;
+
+	renew|bound)
+		if [ $have_bin_ip -eq 1 ]; then
+			ip addr add dev $interface local $ip/$mask $BROADCAST
+        else
+			/sbin/ifconfig $interface $ip $BROADCAST $NETMASK
+         fi
+
+		if [ -n "$router" ] ; then
+			if ! root_is_nfs ; then
+				if [ $interface = $WLAN_INTF ]; then
+					echo "deleting default gateway for "$interface
+					if [ $have_bin_ip -eq 1 ]; then
+						while ip route del default 2>/dev/null ; do
+							:
+						done
+					else
+						while route del default gw 0.0.0.0 dev $interface 2>/dev/null ; do
+							:
+						done
+					fi
+				fi
+			fi
+
+			metric=0
+			for i in $router ; do
+				if [ $interface = $WLAN_INTF ]; then
+					echo "adding default gateway for "$interface" - "$WLAN_INTF
+					if [ $have_bin_ip -eq 1 ]; then
+						ip route add default via $i metric $((metric++))
+					else
+						route add default gw $i dev $interface metric $((metric++)) 2>/dev/null
+					fi
+				fi
+			done
+		fi
+
+		echo -n > $RESOLV_CONF
+		[ -n "$domain" ] && echo search $domain >> $RESOLV_CONF
+                # Populate upto 2 nameservers from DHCP. The resolver
+                # library in libc queries upto 3 namservers when
+                # resolving a hostname. The third namserver will
+                # be our fallback DNS i.e. 8.8.8.8 (Google DNS)
+                NUM_DNS=0
+                MAX_DNS=2
+		for i in $dns ; do
+                        if [ "${NUM_DNS}" -eq "${MAX_DNS}" ]; then
+                            echo "MAX_DNS limit reached. Exit" | LOGGER
+                            break
+                        fi
+			echo adding dns $i | LOGGER
+			echo nameserver $i >> $RESOLV_CONF
+                       ((NUM_DNS++))
+		done
+		;;
+esac
+
+exit 0

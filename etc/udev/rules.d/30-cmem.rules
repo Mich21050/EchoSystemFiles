@@ -1,0 +1,1 @@
+DEVPATH=="/devices/virtual/cmem/cmem", ACTION=="add", GROUP="daemon", MODE="0660"

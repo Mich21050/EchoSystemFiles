@@ -1,0 +1,5 @@
+RG002
+40
+ assumes a link on skeleton
+<DATA>
+/var/run/resolv.conf

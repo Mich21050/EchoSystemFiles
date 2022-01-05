@@ -1,0 +1,82 @@
+#!/bin/sh
+NAME=crond-generate-crontab
+DESC="Boot-time creation of crontabs"
+CROND_SPOOL=/var/spool/cron
+ETC_CRONTABS=/etc/crontabs
+CROND_UPDATE="${CROND_SPOOL}/cron.update"
+
+ECHO=/bin/echo
+CAT=/bin/cat
+CHOWN=/bin/chown
+MKDIR=/bin/mkdir
+BASENAME=/usr/bin/basename
+
+set -e
+
+die() {
+    $ECHO "Fatal error: $@" &>2
+    exit 1
+}
+
+# busybox-cron will see "cron.update" in the spool folder.
+# the contents are the name of the crontab to reload.
+# Note: reviewing the source, it appears that it will only
+# reload a single crontab -- the first name it finds.
+#
+# param 1: username
+# param 2: name of the cron update file
+signal_crond() {
+    NAME="$1"
+    FILE="$2"
+
+    if [ $# -ne 2 ] ; then
+        die "usage: signal_crond <user> <cron-update-file>"
+    fi
+    $ECHO "$NAME" >> "${FILE}"
+}
+
+# param 1: username
+# param 2: etc dir (without username)
+# param 3: cron spool dir (without username)
+generate_one_crontab() {
+    USER="$1"
+    ETCDIR="$2/${USER}"
+    CRONTAB="$3/${USER}"
+
+    if [ $# -ne 3 ] ; then
+        die "usage: generate_one_crontab <user> <etc-dir> <cron-spool>"
+    fi
+
+    $CAT "$ETCDIR"/* > "${CRONTAB}"
+    $CHOWN "${USER}" "${CRONTAB}"
+}
+
+generate_crontabs() {
+    [ -d "${ETC_CRONTABS}" ] || return
+
+    if [ ! -d "${CROND_SPOOL}" ] ; then
+        $MKDIR -p "${CROND_SPOOL}"
+    fi
+
+    for DIR in "${ETC_CRONTABS}"/* ; do
+        U=$($BASENAME $DIR)
+        if [ -d "$DIR" ] ; then
+            generate_one_crontab "$U" "$ETC_CRONTABS" "$CROND_SPOOL"
+            signal_crond "$U" "$CROND_UPDATE"
+        fi
+    done
+}
+
+case "$1" in
+    start|restart|reload)
+        generate_crontabs
+        ;;
+    stop)
+        ;;
+    *)
+        $ECHO "Usage: $0 {start|stop|restart|reload}" >&2
+        exit 1
+        ;;
+esac
+
+exit 0

@@ -1,0 +1,13 @@
+#!/bin/sh
+# Run all scripts in $hook_dir, if it exists, in glob order.
+#
+
+hook_dir=/var/local/test-hook.d
+
+if [ -d $hook_dir ]; then
+    for i in $hook_dir/*; do
+        [ ! -f $i ] && continue
+        "$i"
+    done
+fi
+exit 0

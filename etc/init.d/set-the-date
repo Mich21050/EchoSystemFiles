@@ -1,0 +1,17 @@
+#!/bin/sh
+
+LAST_DATE=/var/local/last-known-date
+
+if [ ! -f ${LAST_DATE} ]
+then
+    date "+%m%d%H%M%Y.%S" -r /etc/ota_version  > ${LAST_DATE}
+fi
+
+if [ -f ${LAST_DATE} ]
+then
+    cat ${LAST_DATE} | while read date; do
+        date $date
+    done
+fi
+
+

@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Set hostname based on device serial no. if not already set that way
+DSN=`/usr/local/bin/doppler-idme --key dsn`
+
+HOSTNAME_FILE=/var/local/hostname
+HOSTS_FILE=/var/local/hosts
+
+let serialLength8=${#DSN}-8
+let serialLength=${#DSN}-5
+
+serialDigits=${DSN:$serialLength}
+serialDigits8=${DSN:$serialLength8}
+
+if [ -n "$serialDigits" ]; then
+    if [ `expr match "$serialDigits8" '[a-zA-Z0-9]*'` -eq 8 ]; then
+        hname=""
+        hname_old=""
+        if grep -q "^P_" /proc/board_rev
+        then
+            hname="pc-$serialDigits8"
+        else
+            hname="dp-$serialDigits8"
+        fi
+
+        if [ -e "$HOSTNAME_FILE" ]; then
+            hname_old=`cat $HOSTNAME_FILE`
+        fi
+
+        if [ -z "$hname_old" ] || [ $hname != $hname_old ]; then
+            # This also creates file if it didn't exist before
+            echo $hname > $HOSTNAME_FILE;
+
+            # Clear hosts file so that it gets created below.
+            rm -f $HOSTS_FILE || :
+        fi
+
+        if [ ! -e "$HOSTS_FILE" ] ; then
+            echo "127.0.0.1     localhost.localdomain           localhost    ${hname}" > $HOSTS_FILE
+        fi
+    fi
+fi

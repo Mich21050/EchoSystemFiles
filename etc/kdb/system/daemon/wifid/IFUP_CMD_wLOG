@@ -1,0 +1,4 @@
+RG002
+40
+<DATA>
+ifup -f wlan0 > /var/log/udhcpc.log

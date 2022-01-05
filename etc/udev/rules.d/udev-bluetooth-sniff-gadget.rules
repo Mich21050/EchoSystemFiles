@@ -1,0 +1,1 @@
+SUBSYSTEM=="bluetooth", KERNEL=="hci0", ATTR{idle_timeout}="5000" ATTR{sniff_max_interval}="3200" ATTR{sniff_min_interval}="400"

@@ -1,0 +1,24 @@
+# Doppler Audio basic configuration variables
+
+MAC_SERVER_FILE="/connect2mac"
+
+PANCAKE_FILE="/Pancake"
+
+AUDIO_INPUT=/QSpeakerIn.shm
+AUDIO_INPUT2=/QEarconIn.shm
+AUDIO_OUTPUT=/BMicsOut.shm
+AUDIO_PHONE_MIC=/BPhoneMic.shm
+AUDIO_VOIP_MIC=/BVoIPMic.shm
+AUDIO_REMOTE_MIC=/BRemoteMic.shm
+
+AUDIO_PLAYBACK_AVG_POWER=/BPlaybackAvgPower.shm
+AUDIO_TRAIT_REPORT=/BTraitReport.shm
+
+MAC_SERVER_RXOUT=/QMacRxOut.shm
+MAC_SERVER_TXIN=/BMacTxIn.shm
+
+AUDIOD_SHMQ=/AudiodCmd.shm
+
+ASR_METADATA_SHM=/BAsrMetadata.shm
+
+BIN_DIR=/usr/local/bin

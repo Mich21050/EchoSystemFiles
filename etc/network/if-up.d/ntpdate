@@ -1,0 +1,6 @@
+#!/bin/sh
+
+#
+# CMD will trigger setting the time via NTP in a reliable way.
+# This script is therefore no longer needed.
+#
