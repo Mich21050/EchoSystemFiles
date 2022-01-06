@@ -1,0 +1,68 @@
+{
+	"endpointId":	"c0cff816-22a7-50e6-96c8-5936905328d9",
+	"endpointTypeId":	"",
+	"manufacturerName":	"Amazon",
+	"modelName":	"AB72C64C86AW2",
+	"friendlyName":	"Michael's Echo",
+	"description":	"Amazon smart device",
+	"displayCategories":	["OTHER"],
+	"relationships":	{
+		"isComponentOf":	{
+			"endpointId":	"G090LV0363720BXH",
+			"source":	"AVS"
+		}
+	},
+	"capabilities":	[{
+			"type":	"AlexaInterface",
+			"interface":	"Alexa.AcousticEventSensor",
+			"version":	"3",
+			"properties":	{
+				"supported":	[{
+						"name":	"babyCryDetectionState"
+					}, {
+						"name":	"beepingApplianceDetectionState"
+					}, {
+						"name":	"carbonMonoxideSirenDetectionState"
+					}, {
+						"name":	"coughDetectionState"
+					}, {
+						"name":	"dogBarkDetectionState"
+					}, {
+						"name":	"glassBreakDetectionState"
+					}, {
+						"name":	"humanPresenceDetectionState"
+					}, {
+						"name":	"runningWaterDetectionState"
+					}, {
+						"name":	"smokeAlarmDetectionState"
+					}, {
+						"name":	"smokeSirenDetectionState"
+					}, {
+						"name":	"snoreDetectionState"
+					}, {
+						"name":	"waterSoundsDetectionState"
+					}, {
+						"name":	"overallMode"
+					}, {
+						"name":	"detectionModes"
+					}],
+				"proactivelyReported":	true,
+				"retrievable":	true
+			}
+		}, {
+			"type":	"AlexaInterface",
+			"interface":	"AEDCloud",
+			"version":	"3"
+		}, {
+			"type":	"AlexaInterface",
+			"interface":	"Alexa.ModeIndicator",
+			"version":	"3",
+			"properties":	{
+				"supported":	[{
+						"name":	"securityMode"
+					}],
+				"proactivelyReported":	true,
+				"retrievable":	true
+			}
+		}]
+}

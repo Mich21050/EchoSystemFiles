@@ -1,0 +1,10 @@
+Package: kindle-d
+Version: 1.3.463
+Section: devel
+Priority: optional
+Architecture: armv7a
+Depends: libxml2, libgcrypt11
+Installed-Size: 4100
+Maintainer: dee-device-software@amazon.com
+Description: Kindle for Doppler
+

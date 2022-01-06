@@ -1,0 +1,10 @@
+/usr/local/bin/http_time_fetcher
+/etc/init/wifid.conf
+/usr/local/lib/libwifi-net-utils.so
+/var/local/system/wifid.conf
+/var/local/system/hid.csv
+/etc/udhcpd-p2p.conf.orig
+/usr/local/bin/wifid
+/var/local/system/
+/usr/local/lib/libwifi-diag-utils.so
+/usr/local/etc/wifid.conf

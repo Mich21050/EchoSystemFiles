@@ -1,0 +1,13 @@
+Package: evtest
+Version: 1.25-r0
+Description: evtest version 1.25-r0
+ Simple tool for input event debugging.
+Section: console/utils
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2
+Architecture: armv7a
+OE: evtest
+Homepage: http://people.freedesktop.org/~whot/evtest/
+Depends: libxml2 (>= 2.7.8), libc6 (>= 2.12)
+Source: http://cgit.freedesktop.org/~whot/evtest/snapshot/evtest-1.25.tar.bz2;name=archive

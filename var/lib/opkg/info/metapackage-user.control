@@ -1,0 +1,10 @@
+Package: metapackage-user
+Version: 1.1.463
+Section: devel
+Priority: optional
+Architecture: armv7a
+Depends: metapackage-base, ssl-certificates-user-build, firewall-rules-user-build
+Installed-Size: 0
+Maintainer: dee-device-software@amazon.com
+Description: Metapackage for user builds.
+

@@ -1,0 +1,13 @@
+Package: libtasn1-3
+Version: 2.11-r0
+Description: libtasn1 version 2.11-r0
+ Library for ASN.1 and DER manipulation
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: LGPLv2.1+
+Architecture: armv7a
+OE: libtasn1
+Homepage: http://www.gnu.org/software/libtasn1/
+Depends: libc6 (>= 2.12)
+Source: ftp://ftp.gnu.org/gnu/libtasn1/libtasn1-2.11.tar.gz

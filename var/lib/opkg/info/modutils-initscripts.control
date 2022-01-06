@@ -1,0 +1,12 @@
+Package: modutils-initscripts
+Version: 1.0-r7
+Description: modutils-initscripts version 1.0-r7
+ modutils configuration files
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: PD
+Architecture: armv7a
+OE: modutils-initscripts
+Homepage: unknown
+Source: file://modutils.sh file://PD.patch

@@ -1,0 +1,13 @@
+Package: libupstart1
+Version: 1.10-r5
+Description: upstart version 1.10-r5
+ Event driven system init
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2+
+Architecture: armv7a
+OE: upstart
+Homepage: unknown
+Depends: libnih (>= 1.0.3), libdbus-1-3 (>= 1.4.16), libc6 (>= 2.12)
+Source: http://upstart.ubuntu.com/download/1.10/upstart-1.10.tar.gz file://init/rc.conf file://sysvcompat/init.d/rc file://sysvcompat/init.d/rcS file://sysvcompat/default/rcS file://sysvcompat/inittab file://upstart-dbus-bridge-depends-on-dbus.patch

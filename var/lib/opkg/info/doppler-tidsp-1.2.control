@@ -1,0 +1,18 @@
+Package: doppler-tidsp-1.2
+Version: 1.2.463
+Source: doppler
+Section: Doppler/1.2
+Priority: optional
+Architecture: armv7a
+Essential: no
+Depends:
+Pre-Depends:
+Recommends:
+Suggests:
+Installed-Size:
+Maintainer: Dee Device Software team <dee-device-software@amazon.com>
+Conflicts:
+Replaces:
+Breaks:
+Provides:
+Description: An package to install the doppler ti dsp modules for Proto 1.2

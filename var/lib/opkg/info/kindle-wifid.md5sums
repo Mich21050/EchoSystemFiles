@@ -1,0 +1,9 @@
+09953b546a2278e6d50f6c807f25fb6b  etc/init/wifid.conf
+edd19ff42e9a3b2c77cb3d7813986f19  etc/udhcpd-p2p.conf.orig
+d20cd0f0021b5dd0d9814e983a8c6209  usr/local/bin/http_time_fetcher
+3dae696e3de458561ee9a92e2cd97aad  usr/local/bin/wifid
+2afe6d60df988f210f427e9b4c72dbb4  usr/local/lib/libwifi-net-utils.so
+d78ea49c169b727a180f513cad953a22  usr/local/lib/libwifi-diag-utils.so
+5a73dbedc5f96a79f6d911143e0ca387  usr/local/etc/wifid.conf
+09afaa63bee79e62f1cc827f893d94ca  var/local/system/hid.csv
+5a73dbedc5f96a79f6d911143e0ca387  var/local/system/wifid.conf

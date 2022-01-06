@@ -1,0 +1,7 @@
+/usr/bin/wpa_supplicant
+/etc/p2p_supplicant.conf
+/usr/lib/libwpa_external.so
+/etc/init/wpa_supplicant.conf
+/usr/bin/wpa_cli
+/usr/bin/wpa_passphrase
+/etc/wpa_supplicant.conf

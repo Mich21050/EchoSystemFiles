@@ -1,0 +1,14 @@
+Package: libavformat54
+Version: 9.9-r7.0
+Description: libav version 9.9-r7.0
+ Libav is a complete, cross-platform solution to record, convert and
+ stream audio and video.
+Section: libs
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2+
+Architecture: armv7a
+OE: libav
+Homepage: http://libav.org/
+Depends: libavcodec54 (>= 9.9), libavutil52 (>= 9.9), libc6 (>= 2.12)
+Source: git://git.libav.org/libav.git;protocol=git;branch=release/9 file://mask_sbr_handling_warning.patch

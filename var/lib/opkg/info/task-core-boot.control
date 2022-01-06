@@ -1,0 +1,13 @@
+Package: task-core-boot
+Version: 1.0-r9
+Description: task-core-boot version 1.0-r9
+ Task for OpenedHand Poky - minimal bootable image
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: MIT
+Architecture: doppler
+OE: task-core-boot
+Homepage: unknown
+Depends: tinylogin, busybox, modutils-initscripts, upstart, update-alternatives-cworth, udev, initscripts, netbase, base-files, upstart-sysvcompat, base-passwd
+Source: None

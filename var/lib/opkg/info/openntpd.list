@@ -1,0 +1,5 @@
+/usr/sbin/ntpd
+/var/shared/empty/
+/var/shared/
+/etc/ntpd.conf
+/etc/init/openntpd.conf

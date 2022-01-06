@@ -1,0 +1,6 @@
+/etc/init/ofono.conf
+/etc/ofono/
+/var/lib/ofono/
+/etc/dbus-1/system.d/ofono.conf
+/usr/sbin/ofonod
+/etc/ofono/phonesim.conf

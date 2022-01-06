@@ -1,0 +1,14 @@
+Package: openntpd
+Version: 3.9p1-r15
+Description: openntpd version 3.9p1-r15
+ OpenNTPD is a FREE, easy to use implementation of the Network Time
+ Protocol.
+Section: console/network
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: BSD
+Architecture: armv7a
+OE: openntpd
+Homepage: http://www.openntpd.org/
+Depends: ntpdate, base-passwd, libc6 (>= 2.12)
+Source: http://ftp5.usa.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-3.9p1.tar.gz file://adjtimex-3.9p1.patch file://ipv4-only-3.9p1.patch file://fixtime-3.9p1.patch file://init file://upstart-openntpd.conf file://ntpd.conf

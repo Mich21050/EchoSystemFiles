@@ -1,0 +1,13 @@
+Package: civetweb
+Version: 1.6-r2
+Description: civetweb
+ civetweb is a webserver for embedded devices
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: MIT
+Architecture: armv7a
+OE: civetweb
+Homepage: http://sourceforge.net/projects/civetweb/
+Depends: libgcc1 (>= 4.5), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Source: http://sourceforge.net/projects/civetweb/files/1.6/civetweb-1.6.tar.gz file://error_msg_security_fix.patch

@@ -1,0 +1,6 @@
+/usr/lib/gio/modules/libgiognutls.so
+/usr/libexec/glib-pacrunner
+/usr/lib/gio/modules/
+/usr/lib/gio/
+/usr/lib/gio/modules/libgiolibproxy.so
+/usr/share/dbus-1/services/org.gtk.GLib.PACRunner.service

@@ -1,0 +1,18 @@
+Package: doppler-version
+Version: 4148
+Source: doppler
+Section: Doppler
+Priority: optional
+Architecture: armv7a
+Essential: no
+Depends:
+Pre-Depends:
+Recommends:
+Suggests:
+Installed-Size:
+Maintainer: Doppler Device Software team <doppler-device-software@amazon.com>
+Conflicts:
+Replaces:
+Breaks:
+Provides:
+Description: Doppler version file

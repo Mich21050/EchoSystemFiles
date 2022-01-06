@@ -1,0 +1,14 @@
+Package: task-doppler-console
+Version: 1.0-r1
+Description: task-doppler-console version 1.0-r1
+ Extended task to get more basic and console apps
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: MIT
+Architecture: all
+OE: task-doppler-console
+Homepage: unknown
+Depends: ltrace, i2c-tools, ncurses, dosfstools, libz1, e2fsprogs-mke2fs, tslib-conf, e2fsprogs, usbutils, strace, ncurses-tools, fbset, tslib-tests, iproute2, ncurses-terminfo, e2fsprogs-e2fsck, htop, tslib-calibrate
+Recommends: kernel-modules
+Source: None

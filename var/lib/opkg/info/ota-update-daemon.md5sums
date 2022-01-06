@@ -1,0 +1,6 @@
+09f1d0b129cc0356278bca86fef6e6a4  etc/init/ota-update-daemon.conf
+72f3dd8a276c946f07490504ff56c415  usr/local/bin/ota-update
+727b7a3c1e92d05eb3364bc2e0c8af08  usr/local/bin/ota-update-daemon
+86e8d7d24fa4dabf4c442f6ad8c21f44  usr/local/etc/ota-update.conf
+5f8713b2b00f395cf89d036a7b789b96  usr/local/etc/ota-pub-keys/codesigner_key2.pub
+805bbbb28e28cbc09c9ef66e40b1a35c  usr/local/etc/ota-pub-keys/codesigner_key1.pub

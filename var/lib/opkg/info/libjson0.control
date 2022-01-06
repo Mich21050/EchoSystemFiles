@@ -1,0 +1,13 @@
+Package: libjson0
+Version: 0.10-r0
+Description: libjson version 0.10-r0
+ JSON-C - A JSON implementation in C
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: MIT
+Architecture: armv7a
+OE: libjson
+Homepage: https://github.com/json-c/json-c/wiki
+Depends: libc6 (>= 2.12)
+Source: https://s3.amazonaws.com/json-c_releases/releases/json-c-0.10.tar.gz file://json_object_iterator.patch

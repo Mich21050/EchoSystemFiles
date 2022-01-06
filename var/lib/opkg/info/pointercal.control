@@ -1,0 +1,12 @@
+Package: pointercal
+Version: 0.0-r11
+Description: pointercal version 0.0-r11
+ Touchscreen calibration data
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: MIT
+Architecture: doppler
+OE: pointercal
+Homepage: unknown
+Source: file://pointercal file://COPYING

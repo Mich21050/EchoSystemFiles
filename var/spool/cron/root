@@ -1,0 +1,2 @@
+*/5 * * * *     /usr/local/bin/save-the-date &> /dev/null
+*/15 * * * *    /usr/sbin/tinyrot >/dev/null 2>&1

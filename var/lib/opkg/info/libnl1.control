@@ -1,0 +1,13 @@
+Package: libnl1
+Version: 1:1.1-r0
+Description: libnl1
+ libnl is a library for applications dealing with netlink sockets.
+Section: libs/network
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: LGPLv2.1
+Architecture: armv7a
+OE: libnl1
+Homepage: http://www.infradead.org/~tgr/libnl/
+Depends: libc6 (>= 2.12)
+Source: http://www.infradead.org/~tgr/libnl/files/libnl-1.1.tar.gz file://netlink-local-fix.patch file://pkgconfig.patch

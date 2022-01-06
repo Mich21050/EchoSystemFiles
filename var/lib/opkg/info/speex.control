@@ -1,0 +1,14 @@
+Package: speex
+Version: 1.2rc2-r2
+Description: Speech Audio Codec
+ Speex is an Open Source/Free Software patent-free audio compression
+ format designed for speech.
+Section: libs
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: BSD
+Architecture: armv7a
+OE: speex
+Homepage: http://www.speex.org
+Depends: libc6 (>= 2.12)
+Source: git://iot-gerrit/echo/open-source/speex.git;branch=master;protocol=ssh

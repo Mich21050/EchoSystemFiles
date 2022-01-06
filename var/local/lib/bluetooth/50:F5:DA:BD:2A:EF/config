@@ -1,0 +1,6 @@
+name Echo-BXH
+pairable yes
+class 0x0c0414
+discovto 300
+mode connectable
+onmode connectable

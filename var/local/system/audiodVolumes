@@ -1,0 +1,17 @@
+version1
+54	MainVolume for local
+46	MainVolume for lineout
+46	MainVolume for a2dpOut
+40	PhoneVolume
+40	AlarmVolume	Temporary Value:40
+Not Muted
+100	MaxVolume
+
+Debug only:
+54	Speaker Volume
+100	Music
+83	TTS
+83	Earcon
+0	BTCall
+100	Music-BT
+Mode: Music

@@ -1,0 +1,12 @@
+Package: gst-plugins-good
+Version: 1.2.1-r11
+Description: gst-plugins-good version 1.2.1-r11
+ Plugins for GStreamer
+Section: multimedia
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2+ & LGPLv2.1+
+Architecture: armv7a
+OE: gst-plugins-good
+Homepage: http://gstreamer.freedesktop.org/
+Source: http://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.2.1.tar.xz file://remove-latency-updates.patch file://fix-pulse-sink-leak.patch file://pulsesink_report_underflow.patch file://pulsesink_report_stream_start.patch file://adjust_adts_frame_length.patch file://pulsesink_create_stream.patch file://fix-icydemux-caps-reset.patch

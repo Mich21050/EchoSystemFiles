@@ -1,0 +1,9 @@
+Package: atheros-external
+Version: 1.6.463
+Section: devel
+Priority: optional
+Architecture: armv7a
+Installed-Size: 228
+Maintainer: dee-device-software@amazon.com
+Description: Atheros Tool for Wifi-BT Coex testing
+

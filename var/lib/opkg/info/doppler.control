@@ -1,0 +1,10 @@
+Package: doppler
+Version: 1.2.463
+Section: devel
+Priority: optional
+Architecture: armv7a
+Depends: doppler-core, doppler-misc, kindle-wifid, bluez-hcidump, libcgroup, libcjson, libnl, libspdylay, libsqlite3, libtinyxml2, liburiparser, speex, libopus, wpa-supplicant, ota-update-daemon, libthrift, openssl-misc, python-json, python-netserver, python-subprocess, gstreamer, gst-plugins-base-app, gst-plugins-base-typefindfunctions, gst-plugins-base-playback, gst-plugins-base-ogg, gst-plugins-base-vorbis, gst-plugins-good-audioparsers, gst-plugins-good-autodetect, gst-plugins-good-souphttpsrc, gst-plugins-good-id3demux, gst-plugins-good-icydemux, gst-plugins-good-isomp4, gst-plugins-good-pulse, gst-plugins-good-wavparse, gst-libav, gst-plugins-bad-mpegtsdemux, gst-plugins-bad-mpg123, glib-networking, libpryon, doppler-misc, avahi, avahi-daemon, avahi-utils, scone
+Installed-Size: 236190
+Maintainer: dee-device-software@amazon.com
+Description: Doppler for Proto 1.2
+

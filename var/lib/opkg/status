@@ -1,0 +1,2383 @@
+Package: openssl-misc
+Version: 1.0.2f-r0.0
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405364
+
+Package: libbz2-0
+Version: 1.0.6-r5
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405380
+
+Package: syslog-ng
+Version: 3.2.5-r23.1
+Depends: libssl1.0.0 (>= 1.0.2f), libcrypto1.0.0 (>= 1.0.2f), libglib-2.0-0 (>= 2.32.4), libevtlog0 (>= 0.2.12), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Conffiles:
+ /etc/syslog-ng.conf 7a1944f527fd57a22051938d408b7bdb
+ /etc/scl.conf e15074ee8bcc497fc82daa43cb715d89
+ /etc/scl-modules.conf 48b71c9ee3f46a60d8f6feaec1110525
+Installed-Time: 1475405347
+
+Package: module-init-tools-depmod
+Version: 3.16-r0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405267
+
+Package: gst-plugins-bad-mpegtsdemux
+Version: 1.2.1-r7
+Depends: gst-plugins-bad, gstreamer (>= 1.2.1), libgstvideo-1.0-0 (>= 1.2.1), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libgsttag-1.0-0 (>= 1.2.1), libglib-2.0-0 (>= 2.32.4), libc6 (>= 2.12), libgstmpegts-1.0-0 (>= 1.2.1), libgstpbutils-1.0-0 (>= 1.2.1), liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405381
+
+Package: libevtlog0
+Version: 0.2.12-r0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405346
+
+Package: ltrace
+Version: 0.5.3-r4
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405270
+
+Package: gst-plugins-good-id3demux
+Version: 1.2.1-r11
+Depends: gstreamer (>= 1.2.1), libgstvideo-1.0-0 (>= 1.2.1), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libgsttag-1.0-0 (>= 1.2.1), gst-plugins-good, libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), libgstpbutils-1.0-0 (>= 1.2.1), liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405375
+
+Package: avahi
+Version: 0.6.31-r5.0
+Recommends: libnss-mdns
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405290
+
+Package: pulseaudio-module-role-cork
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405310
+
+Package: libboost-date-time1.53.0
+Version: 1.53.0-r4.0
+Depends: libgcc1 (>= 4.5), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405321
+
+Package: libc6
+Version: 2.12-r33
+Provides: rtld(GNU_HASH), glibc
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405246
+
+Package: opkg
+Version: 1:0.1.8+svnr633-r9.0
+Depends: opkg-config-base, update-alternatives-cworth, libopkg1 (>= 0.1.8+svnr633), libc6 (>= 2.12)
+Provides:
+Replaces: opkg-nogpg
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405327
+
+Package: python-readline
+Version: 2.7.2-r2.18
+Depends: libreadline5 (>= 5.2), python-core, libpython2.7-1.0 (>= 2.7.2), libncursesw5 (>= 5.9), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405333
+
+Package: python-netclient
+Version: 2.7.2-r2.18
+Depends: python-mime, python-datetime, python-core, python-io, python-logging, python-crypt, python-lang
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405343
+
+Package: iperf
+Version: 2.0.5-r0
+Depends: libgcc1 (>= 4.5), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405327
+
+Package: pulseaudio-module-switch-on-port-available
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405306
+
+Package: libcares2
+Version: 1.9.1-r1
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405354
+
+Package: python-datetime
+Version: 2.7.2-r2.18
+Depends: python-core, libpython2.7-1.0 (>= 2.7.2), python-codecs, libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405342
+
+Package: pulseaudio-module-device-restore
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio-lib-protocol-native (>= 3.0), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405309
+
+Package: libcom-err2
+Version: 1.42.1-r1
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405273
+
+Package: libopus
+Version: 1.1.0
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405362
+
+Package: libgstapp-1.0-0
+Version: 1.2.1-r5
+Depends: libffi5 (>= 3.0.10), libglib-2.0-0 (>= 2.32.4), gstreamer (>= 1.2.1), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405365
+
+Package: python-codecs
+Version: 2.7.2-r2.18
+Depends: python-core, libpython2.7-1.0 (>= 2.7.2), python-lang, libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405336
+
+Package: iw
+Version: 3.2-r1
+Depends: libnl-genl-3-200 (>= 3.2.3), libnl-3-200 (>= 3.2.3), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405349
+
+Package: alsa-lib
+Version: 1.0.25-r1
+Depends: libasound2 (>= 1.0.25), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405266
+
+Package: busybox
+Version: 1.19.4-r15
+Depends: libc6 (>= 2.12)
+Recommends: busybox-udhcpc
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405247
+
+Package: pulseaudio-module-bluetooth-device
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio-lib-bluetooth-util (>= 3.0), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405307
+
+Package: gst-plugins-good-souphttpsrc
+Version: 1.2.1-r11
+Depends: gstreamer (>= 1.2.1), libsoup-2.4-1 (>= 2.38.1), libxml2 (>= 2.7.8), libz1 (>= 1.2.6), libffi5 (>= 3.0.10), libgsttag-1.0-0 (>= 1.2.1), gst-plugins-good, libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405374
+
+Package: tslib-conf
+Version: 1.0+gitr1+e17263ef401ee885a27d649b90b577cfb44500e0-r8
+Provides: libts-0.0-conf
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405276
+
+Package: pulseaudio-lib-protocol-native
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405303
+
+Package: pulseaudio-module-native-protocol-unix
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio-lib-protocol-native (>= 3.0), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405303
+
+Package: gst-plugins-good
+Version: 1.2.1-r11
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405347
+
+Package: pulseaudio-module-detect
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405316
+
+Package: ota-update-daemon
+Version: 1.0.463
+Depends: busybox, opkg, libs3auth, libotaup
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405364
+
+Package: libssl1.0.0
+Version: 1.0.2f-r0.0
+Depends: libcrypto1.0.0 (>= 1.0.2f), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405328
+
+Package: task-doppler-console
+Version: 1.0-r1
+Depends: ltrace, i2c-tools, ncurses, dosfstools, libz1, e2fsprogs-mke2fs, tslib-conf, e2fsprogs, usbutils, strace, ncurses-tools, fbset, tslib-tests, iproute2, ncurses-terminfo, e2fsprogs-e2fsck, htop, tslib-calibrate
+Recommends: kernel-modules
+Provides:
+Status: install user installed
+Architecture: all
+Installed-Time: 1475405286
+
+Package: opkg-config-base
+Version: 1.0-r1
+Provides:
+Status: install user installed
+Architecture: doppler
+Conffiles:
+ /etc/opkg/arch.conf 1ff06dba98f9d78931cc27720ac9f7f9
+Installed-Time: 1475405326
+
+Package: task-doppler-base
+Version: 1.0-r1
+Depends: mtd-utils, devmem2, ethtool, alsa-lib, module-init-tools, tcpdump, alsa-utils-aplay
+Provides:
+Status: install user installed
+Architecture: all
+Installed-Time: 1475405269
+
+Package: libavformat54
+Version: 9.9-r7.0
+Depends: libavcodec54 (>= 9.9), libavutil52 (>= 9.9), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405379
+
+Package: libpulse-simple0
+Version: 3.0-r45
+Depends: libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, sbc, libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405311
+
+Package: libpulsecore
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, sbc, speex (>= 1.2rc2), libc6 (>= 2.12), liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405299
+
+Package: python-json
+Version: 2.7.2-r2.18
+Depends: python-core, libpython2.7-1.0 (>= 2.7.2), python-re, python-math, libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405335
+
+Package: libnl-3-200
+Version: 3.2.3-r0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405348
+
+Package: busybox-udhcpc
+Version: 1.19.4-r15
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405247
+
+Package: python-lang
+Version: 2.7.2-r2.18
+Depends: python-core, libpython2.7-1.0 (>= 2.7.2), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405332
+
+Package: libgcrypt11
+Version: 1.5.0-r0
+Depends: libcap2 (>= 2.22), libgpg-error0 (>= 1.10), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405353
+
+Package: firewall-rules-user-build
+Version: 1.0.463
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405415
+
+Package: bash
+Version: 3.2.48-r12
+Depends: libtinfo5 (>= 5.9), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405277
+
+Package: libusb-0.1-4
+Version: 1:0.1.3-r5
+Depends: libusb-1.0-0 (>= 1.0.8), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405278
+
+Package: libffi5
+Version: 3.0.10-r0
+Depends: libgcc1 (>= 4.5), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405294
+
+Package: strace
+Version: 4.6-r1
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405279
+
+Package: openssl
+Version: 1.0.2f-r0.0
+Depends: libssl1.0.0 (>= 1.0.2f), libcrypto1.0.0 (>= 1.0.2f), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405329
+
+Package: atheros-external
+Version: 1.6.463
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405411
+
+Package: pulseaudio-module-pipe-source
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405311
+
+Package: pulseaudio-module-sine
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405314
+
+Package: dbus-1
+Version: 1.4.16-r11.1
+Depends: libdbus-1-3 (>= 1.4.16), libexpat1 (>= 2.0.1), base-passwd, libc6 (>= 2.12)
+Provides: dbus-x11
+Replaces: dbus-x11
+Status: install user installed
+Architecture: armv7a
+Conffiles:
+ /etc/dbus-1/system.conf cde0a6ef9dad7b80fce3b227753fa64e
+ /etc/dbus-1/session.conf 3ec4497bcff6f8e1445db64b23bda595
+Installed-Time: 1475405254
+
+Package: libgstmpegts-1.0-0
+Version: 1.2.1-r7
+Depends: libffi5 (>= 3.0.10), libglib-2.0-0 (>= 2.32.4), gstreamer (>= 1.2.1), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405381
+
+Package: libgstaudio-1.0-0
+Version: 1.2.1-r5
+Depends: gstreamer (>= 1.2.1), libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libgsttag-1.0-0 (>= 1.2.1), libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405368
+
+Package: pulseaudio-module-device-manager
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio-lib-protocol-native (>= 3.0), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405305
+
+Package: libnih
+Version: 1.0.3-r2-4ubuntu16
+Depends: libdbus-1-3 (>= 1.4.16), libexpat1 (>= 2.0.1), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405255
+
+Package: gst-plugins-base-playback
+Version: 1.2.1-r5
+Depends: gstreamer (>= 1.2.1), libgstvideo-1.0-0 (>= 1.2.1), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libgsttag-1.0-0 (>= 1.2.1), libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), libgstpbutils-1.0-0 (>= 1.2.1), liborc-0.4-0 (>= 0.4.18), gst-plugins-base
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405370
+
+Package: modutils-initscripts
+Version: 1.0-r7
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405253
+
+Package: evtest
+Version: 1.25-r0
+Depends: libxml2 (>= 2.7.8), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405330
+
+Package: pulseaudio-server
+Version: 3.0-r45
+Depends: speex (>= 1.2rc2), libltdl7 (>= 2.4.2), libjson0 (>= 0.10), pulseaudio-module-rescue-streams, pulseaudio-module-detect, pulseaudio-module-native-protocol-unix, pulseaudio-module-null-sink, libpulsecore (>= 3.0), liborc-0.4-0 (>= 0.4.18), pulseaudio-module-device-restore, pulseaudio-module-always-sink, pulseaudio-module-udev-detect, pulseaudio-module-stream-restore, pulseaudio-module-role-cork, libdbus-1-3 (>= 1.4.16), libsamplerate0 (>= 0.1.8), libsndfile1 (>= 1.0.25), libcap2 (>= 2.22), libc6 (>= 2.12), libpulse0 (>= 3.0), pulseaudio-module-position-event-sounds, pulseaudio (>= 3.0), pulseaudio-module-suspend-on-idle, pulseaudio-module-card-restore, base-passwd, pulseaudio-module-default-device-restore
+Provides:
+Replaces: libpulse-bin, libpulse-conf
+Status: install user installed
+Architecture: armv7a
+Conffiles:
+ /etc/pulse/default.pa b352c6357fd460d706823f0bb9a8c29e
+ /etc/pulse/daemon.conf fa6840cd7671b89415eec444022468e5
+ /etc/pulse/client.conf bdea965cdb68b445c04a1fa62193c096
+Installed-Time: 1475405318
+
+Package: pulseaudio-module-remap-sink
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405310
+
+Package: libavutil52
+Version: 9.9-r7.0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405378
+
+Package: libopkg1
+Version: 1:0.1.8+svnr633-r9.0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405326
+
+Package: libusb-1.0-0
+Version: 1.0.8-r4
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405277
+
+Package: libuuid1
+Version: 2.21-r5
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405258
+
+Package: ncurses-tools
+Version: 5.9-r9.1
+Depends: ncurses, libtic5 (>= 5.9), libtinfo5 (>= 5.9), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405280
+
+Package: libboost-program-options1.53.0
+Version: 1.53.0-r4.0
+Depends: libgcc1 (>= 4.5), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405322
+
+Package: libnl1
+Version: 1:1.1-r0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405357
+
+Package: libgstrtp-1.0-0
+Version: 1.2.1-r5
+Depends: libffi5 (>= 3.0.10), libglib-2.0-0 (>= 2.32.4), gstreamer (>= 1.2.1), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405376
+
+Package: civetweb
+Version: 1.6-r2
+Depends: libgcc1 (>= 4.5), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405351
+
+Package: pulseaudio
+Version: 3.0-r45
+Depends: libsndfile1 (>= 1.0.25), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), fftwf, bluez4 (>= 4.101), sbc, libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405296
+
+Package: base-files
+Version: 3.0.14-r109
+Provides:
+Status: install user installed
+Architecture: doppler
+Conffiles:
+ /etc/fstab ee4666469ab0f484bc75f427abcd73e5
+Installed-Time: 1475405262
+
+Package: alsa-conf-base
+Version: 1.0.25-r1
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405265
+
+Package: openntpd
+Version: 3.9p1-r15
+Depends: ntpdate, base-passwd, libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405351
+
+Package: dosfstools
+Version: 2.11-r4
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405272
+
+Package: devmem2
+Version: 1.0-r7
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405265
+
+Package: libstdc++6
+Version: 4.5-r49+svnr184907
+Depends: libgcc1 (>= 4.5), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405320
+
+Package: gst-plugins-base-app
+Version: 1.2.1-r5
+Depends: libffi5 (>= 3.0.10), gstreamer (>= 1.2.1), libgstapp-1.0-0 (>= 1.2.1), libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), gst-plugins-base
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405367
+
+Package: libfftwf
+Version: 3.2.2-r2
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405292
+
+Package: libdbus-1-3
+Version: 1.4.16-r11.1
+Depends: libc6 (>= 2.12)
+Recommends: dbus-1
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405255
+
+Package: libarchive2
+Version: 2.8.5-r0
+Depends: libattr1 (>= 2.4.46), libxml2 (>= 2.7.8), libz1 (>= 1.2.6), libcrypto1.0.0 (>= 1.0.2f), libacl1 (>= 2.2.51), libc6 (>= 2.12), libbz2-0 (>= 1.0.6)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405386
+
+Package: libs3auth
+Version: 0.2.463
+Depends: kindle-d, openssl
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405363
+
+Package: doppler-misc
+Version: 1.0.0
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405356
+
+Package: protobuf
+Version: 2.4.1.0
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405354
+
+Package: dnsmasq
+Version: 2.55-r15
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Conffiles:
+ /etc/dnsmasq.conf e55a33fc035520c4bf1e4de10b7a255f
+Installed-Time: 1475405329
+
+Package: sbc
+Version: 1.2-r0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405296
+
+Package: python-core
+Version: 2.7.2-r2.18
+Depends: python-re, libpython2.7-1.0 (>= 2.7.2), libz1 (>= 1.2.6), python-lang, libc6 (>= 2.12)
+Recommends: python-readline
+Provides: python
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405333
+
+Package: usbutils
+Version: 0.91-r3
+Depends: libz1 (>= 1.2.6), usbutils-ids, bash, libusb-0.1-4 (>= 0.1.3), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405278
+
+Package: metapackage-base
+Version: 1.0.463
+Depends: doppler-version, doppler-console-image, doppler, doppler-tidsp-1.2, doppler-atheros, doppler-kernel-1.2, spotify
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405414
+
+Package: initscripts
+Version: 1.0-r156
+Depends: sysvinit-pidof
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405261
+
+Package: pulseaudio-module-volume-restore
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405319
+
+Package: libcrypto1.0.0
+Version: 1.0.2f-r0.0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405328
+
+Package: pulseaudio-module-card-restore
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405300
+
+Package: libtinfo5
+Version: 5.9-r9.1
+Depends: libc6 (>= 2.12)
+Recommends: ncurses-terminfo-base
+Suggests: ncurses-terminfo
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405271
+
+Package: pulseaudio-module-bluetooth-policy
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405312
+
+Package: pulseaudio-module-suspend-on-idle
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405317
+
+Package: libgstpbutils-1.0-0
+Version: 1.2.1-r5
+Depends: gstreamer (>= 1.2.1), libgstvideo-1.0-0 (>= 1.2.1), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libgsttag-1.0-0 (>= 1.2.1), libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405369
+
+Package: libjson0
+Version: 0.10-r0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405256
+
+Package: update-alternatives-cworth
+Version: 1:0.1.8+svnr633-r9.0
+Provides: update-alternatives
+Conflicts: update-alternatives-dpkg
+Status: install user installed
+Architecture: all
+Installed-Time: 1475405257
+
+Package: python-io
+Version: 2.7.2-r2.18
+Depends: libssl1.0.0 (>= 1.0.2f), libpython2.7-1.0 (>= 2.7.2), python-core, python-math, libcrypto1.0.0 (>= 1.0.2f), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405338
+
+Package: task-core-boot
+Version: 1.0-r9
+Depends: tinylogin, busybox, modutils-initscripts, upstart, update-alternatives-cworth, udev, initscripts, netbase, base-files, upstart-sysvcompat, base-passwd
+Provides:
+Status: install user installed
+Architecture: doppler
+Installed-Time: 1475405263
+
+Package: python-netserver
+Version: 2.7.2-r2.18
+Depends: python-core, python-netclient
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405343
+
+Package: pulseaudio-lib-protocol-simple
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405315
+
+Package: doppler-atheros
+Version: 1.2.463
+Depends: atheros-external
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405411
+
+Package: upstart-sysvcompat
+Version: 1.10-r5
+Provides:
+Conflicts: sysvinit
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405262
+
+Package: iproute2
+Version: 3.2.0-r1
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405283
+
+Package: python-textutils
+Version: 2.7.2-r2.18
+Depends: libpython2.7-1.0 (>= 2.7.2), python-core, python-io, libc6 (>= 2.12), python-re, python-stringold
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405344
+
+Package: libvorbis
+Version: 1.3.3-r0
+Depends: libogg0 (>= 1.3.0), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405372
+
+Package: pointercal
+Version: 0.0-r11
+Provides:
+Status: install user installed
+Architecture: doppler
+Installed-Time: 1475405281
+
+Package: boost-serialization
+Version: 1.53.0-r4.0
+Depends: libgcc1 (>= 4.5), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405324
+
+Package: libboost-filesystem1.53.0
+Version: 1.53.0-r4.0
+Depends: libgcc1 (>= 4.5), libboost-system1.53.0 (>= 1.53.0), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405322
+
+Package: libts-1.0-0
+Version: 1.0+gitr1+e17263ef401ee885a27d649b90b577cfb44500e0-r8
+Depends: tslib-conf, libc6 (>= 2.12)
+Recommends: pointercal
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405282
+
+Package: pulseaudio-module-combine
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405309
+
+Package: libproxy
+Version: 0.4.7-r4
+Depends: libgcc1 (>= 4.5), libglib-2.0-0 (>= 2.32.4), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405383
+
+Package: libxml2
+Version: 2.7.8-r7
+Depends: libz1 (>= 1.2.6), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405330
+
+Package: pulseaudio-module-bluetooth-discover
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio-lib-bluetooth-util (>= 3.0), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405304
+
+Package: pulseaudio-module-virtual-source
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405310
+
+Package: python-crypt
+Version: 2.7.2-r2.18
+Depends: libssl1.0.0 (>= 1.0.2f), python-core, libpython2.7-1.0 (>= 2.7.2), libcrypto1.0.0 (>= 1.0.2f), libc6 (>= 2.12)
+Recommends: openssl
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405342
+
+Package: ofono
+Version: 1.5-r4
+Depends: bluez4 (>= 4.101), libglib-2.0-0 (>= 2.32.4), libdbus-1-3 (>= 1.4.16), libudev0 (>= 182), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405334
+
+Package: pulseaudio-module-dbus-protocol
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405307
+
+Package: libavahi-common3
+Version: 0.6.31-r5.0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405287
+
+Package: libblkid1
+Version: 2.21-r5
+Depends: libuuid1 (>= 2.21), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405259
+
+Package: python-math
+Version: 2.7.2-r2.18
+Depends: python-core, libpython2.7-1.0 (>= 2.7.2), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405335
+
+Package: libupnp
+Version: 1.6.19-r2
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405291
+
+Package: tcpdump
+Version: 4.1.1-r1
+Depends: libpcap (>= 1.2.1), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405269
+
+Package: mtd-utils
+Version: 1.4.9-r1
+Depends: libz1 (>= 1.2.6), liblzo2-2 (>= 2.06), libuuid1 (>= 2.21), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405264
+
+Package: amazon-ca-certs
+Version: 20121129-r0
+Provides:
+Status: install user installed
+Architecture: all
+Installed-Time: 1475405287
+
+Package: python-elementtree
+Version: 2.7.2-r2.18
+Depends: python-core, libpython2.7-1.0 (>= 2.7.2), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405337
+
+Package: udev-utils
+Version: 182-r9
+Depends: libkmod2 (>= 7), libblkid1 (>= 2.21), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405259
+
+Package: upstart
+Version: 1.10-r5
+Depends: libnih (>= 1.0.3), libdbus-1-3 (>= 1.4.16), libudev0 (>= 182), libjson0 (>= 0.10), libc6 (>= 2.12)
+Recommends: libupstart1
+Provides:
+Conflicts: sysvinit
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405257
+
+Package: pulseaudio-module-null-source
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405308
+
+Package: liburiparser
+Version: 0.7.5.1
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405362
+
+Package: libboost-chrono1.53.0
+Version: 1.53.0-r4.0
+Depends: libgcc1 (>= 4.5), libboost-system1.53.0 (>= 1.53.0), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405323
+
+Package: ethtool
+Version: 2.6.36-r0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405265
+
+Package: libotaup
+Version: 0.2.463
+Depends: kindle-d, protobuf, libcurl5, libs3auth (>= 0.2)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405363
+
+Package: pulseaudio-lib-cli
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405302
+
+Package: gst-plugins-good-wavparse
+Version: 1.2.1-r11
+Depends: gstreamer (>= 1.2.1), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libgsttag-1.0-0 (>= 1.2.1), gst-plugins-good, libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), libgstriff-1.0-0 (>= 1.2.1), liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405377
+
+Package: libtic5
+Version: 5.9-r9.1
+Depends: libtinfo5 (>= 5.9), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405279
+
+Package: libnl
+Version: 3.2.11.1
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405360
+
+Package: pulseaudio-module-virtual-surround-sink
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405311
+
+Package: libgstvideo-1.0-0
+Version: 1.2.1-r5
+Depends: libffi5 (>= 3.0.10), libglib-2.0-0 (>= 2.32.4), gstreamer (>= 1.2.1), liborc-0.4-0 (>= 0.4.18), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405367
+
+Package: libboost-system1.53.0
+Version: 1.53.0-r4.0
+Depends: libgcc1 (>= 4.5), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405321
+
+Package: pulseaudio-module-null-sink
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405304
+
+Package: libsoup-2.4-1
+Version: 2.38.1-r1
+Depends: libffi5 (>= 3.0.10), libxml2 (>= 2.7.8), libglib-2.0-0 (>= 2.32.4), libz1 (>= 1.2.6), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405374
+
+Package: libgstriff-1.0-0
+Version: 1.2.1-r5
+Depends: gstreamer (>= 1.2.1), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libgsttag-1.0-0 (>= 1.2.1), libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405371
+
+Package: libpython2.7-1.0
+Version: 2.7.2-r2.18
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405331
+
+Package: doppler-uboot
+Version: 1.3.0+git1+cef7b7a80f9ee4ad776f55339119e2e8757b3057
+Depends: mtd-utils, busybox, doppler
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405412
+
+Package: libpulse0
+Version: 3.0-r45
+Depends: libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, sbc, libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405297
+
+Package: wpa-supplicant
+Version: 1.0-r10
+Depends: libnl1 (>= 1.1), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405357
+
+Package: i2c-tools
+Version: 3.0.3-r0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405270
+
+Package: libncursesw5
+Version: 5.9-r9.1
+Depends: libtinfo5 (>= 5.9), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405332
+
+Package: pulseaudio-module-match
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405301
+
+Package: libthrift
+Version: 0.9.0-r0
+Depends: libgcc1 (>= 4.5), libcrypto1.0.0 (>= 1.0.2f), libc6 (>= 2.12), libssl1.0.0 (>= 1.0.2f), libstdc++6 (>= 4.5)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405364
+
+Package: gst-plugins-good-pulse
+Version: 1.2.1-r11
+Depends: libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), gstreamer (>= 1.2.1), libgstvideo-1.0-0 (>= 1.2.1), libjson0 (>= 0.10), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), libdbus-1-3 (>= 1.4.16), libz1 (>= 1.2.6), pulseaudio (>= 3.0), libgsttag-1.0-0 (>= 1.2.1), gst-plugins-good, libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), libgstpbutils-1.0-0 (>= 1.2.1), liborc-0.4-0 (>= 0.4.18), libcap2 (>= 2.22)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405377
+
+Package: e2fsprogs-badblocks
+Version: 1.42.1-r1
+Depends: libc6 (>= 2.12), e2fsprogs (>= 1.42.1), libcom-err2 (>= 1.42.1)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405275
+
+Package: libsamplerate0
+Version: 0.1.8-r1
+Depends: libsndfile1 (>= 1.0.25), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405297
+
+Package: libavcodec54
+Version: 9.9-r7.0
+Depends: libavutil52 (>= 9.9), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405378
+
+Package: libavahi-glib1
+Version: 0.6.31-r5.0
+Depends: libglib-2.0-0 (>= 2.32.4), libavahi-common3 (>= 0.6.31), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405413
+
+Package: python-threading
+Version: 2.7.2-r2.18
+Depends: python-core, python-lang
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405337
+
+Package: usbutils-ids
+Version: 0.91-r3
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405277
+
+Package: libkmod2
+Version: 7-r3
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405258
+
+Package: libacl1
+Version: 2.2.51-r3
+Depends: libattr1 (>= 2.4.46), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405385
+
+Package: fbset-modes
+Version: 0.1.0-r6
+Provides:
+Status: install user installed
+Architecture: all
+Conffiles:
+ /etc/fb.modes b8de2484fab6925beba7fc258292ea2d
+Installed-Time: 1475405280
+
+Package: base-passwd
+Version: 3.5.24-r6
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405254
+
+Package: libcgroup
+Version: 0.37.1-r1
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405359
+
+Package: gst-plugins-base-vorbis
+Version: 1.2.1-r5
+Depends: libogg0 (>= 1.3.0), gstreamer (>= 1.2.1), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libgsttag-1.0-0 (>= 1.2.1), libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), libvorbis (>= 1.3.3), liborc-0.4-0 (>= 0.4.18), gst-plugins-base
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405372
+
+Package: pulseaudio-module-sine-source
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405315
+
+Package: libreadline5
+Version: 5.2-r8
+Depends: libtinfo5 (>= 5.9), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405293
+
+Package: gst-plugins-bad
+Version: 1.2.1-r7
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405381
+
+Package: doppler
+Version: 1.2.463
+Depends: doppler-core, doppler-misc, kindle-wifid, bluez-hcidump, libcgroup, libcjson, libnl, libspdylay, libsqlite3, libtinyxml2, liburiparser, speex, libopus, wpa-supplicant, ota-update-daemon, libthrift, openssl-misc, python-json, python-netserver, python-subprocess, gstreamer, gst-plugins-base-app, gst-plugins-base-typefindfunctions, gst-plugins-base-playback, gst-plugins-base-ogg, gst-plugins-base-vorbis, gst-plugins-good-audioparsers, gst-plugins-good-autodetect, gst-plugins-good-souphttpsrc, gst-plugins-good-id3demux, gst-plugins-good-icydemux, gst-plugins-good-isomp4, gst-plugins-good-pulse, gst-plugins-good-wavparse, gst-libav, gst-plugins-bad-mpegtsdemux, gst-plugins-bad-mpg123, glib-networking, libpryon, doppler-misc, avahi, avahi-daemon, avahi-utils, scone
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405410
+
+Package: scone
+Version: 1.0.323
+Provides:
+Status: install user installed
+Architecture: any
+Installed-Time: 1475405399
+
+Package: libboost-signals1.53.0
+Version: 1.53.0-r4.0
+Depends: libgcc1 (>= 4.5), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405323
+
+Package: libnl-genl-3-200
+Version: 3.2.3-r0
+Depends: libnl-3-200 (>= 3.2.3), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405348
+
+Package: e2fsprogs-e2fsck
+Version: 1.42.1-r1
+Depends: libcom-err2 (>= 1.42.1), libe2p2 (>= 1.42.1), e2fsprogs (>= 1.42.1), libc6 (>= 2.12), libblkid1 (>= 2.21), libuuid1 (>= 2.21)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405285
+
+Package: python-re
+Version: 2.7.2-r2.18
+Depends: python-core
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405331
+
+Package: e2fsprogs-blkid
+Version: 1.42.1-r1
+Depends: libblkid1 (>= 2.21), e2fsprogs (>= 1.42.1), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405274
+
+Package: pulseaudio-module-stream-restore
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio-lib-protocol-native (>= 3.0), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405317
+
+Package: libgnutls26
+Version: 2.12.17-r7.0
+Depends: libcap2 (>= 2.22), libz1 (>= 1.2.6), libc6 (>= 2.12), libtasn1-3 (>= 2.11), libgpg-error0 (>= 1.10), libgcrypt11 (>= 1.5.0)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405384
+
+Package: libspdylay
+Version: 1.2.3.1
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405360
+
+Package: pulseaudio-module-tunnel-source
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405308
+
+Package: gst-plugins-good-audioparsers
+Version: 1.2.1-r11
+Depends: gstreamer (>= 1.2.1), libgstvideo-1.0-0 (>= 1.2.1), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libgsttag-1.0-0 (>= 1.2.1), gst-plugins-good, libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), libgstpbutils-1.0-0 (>= 1.2.1), liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405373
+
+Package: iptables
+Version: 1.4.12.2-r0
+Depends: libc6 (>= 2.12)
+Recommends: kernel-module-nf-defrag-ipv4, kernel-module-nf-conntrack, kernel-module-ipt-masquerade, kernel-module-x-tables, kernel-module-nf-nat, kernel-module-nf-conntrack-ipv4, kernel-module-iptable-nat, kernel-module-ip-tables, kernel-module-iptable-filter
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405349
+
+Package: gst-plugins-bad-mpg123
+Version: 1.2.1-r7
+Depends: gst-plugins-bad, libltdl7 (>= 2.4.2), gstreamer (>= 1.2.1), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libgsttag-1.0-0 (>= 1.2.1), mpg123 (>= 1.21.0), libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405382
+
+Package: python-dbus
+Version: 1.0.0-r1
+Depends: libdbus-glib-1-2 (>= 0.98), python-threading, libffi5 (>= 3.0.10), libdbus-1-3 (>= 1.4.16), libz1 (>= 1.2.6), python-xml, python-io, python-logging, libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), python-stringold
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405341
+
+Package: pulseaudio-lib-rtp
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405305
+
+Package: alsa-utils-aplay
+Version: 1.0.25-r2
+Depends: libasound2 (>= 1.0.25), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405269
+
+Package: pulseaudio-module-virtual-sink
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405299
+
+Package: doppler-core
+Version: 1.2.463
+Depends: kindle-d, task-doppler-boost, protobuf, libcurl5, libdbus-1-3, libstdc++6
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405355
+
+Package: spotify
+Version: 1.0.463
+Depends: gstreamer, gst-plugins-base-app, gst-plugins-base-playback, gst-plugins-good-pulse, gst-plugins-good-autodetect, libavahi-common3, libavahi-client3, libavahi-glib1
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405414
+
+Package: tslib-calibrate
+Version: 1.0+gitr1+e17263ef401ee885a27d649b90b577cfb44500e0-r8
+Depends: libts-1.0-0 (>= 1.0+gitr1+e17263ef401ee885a27d649b90b577cfb44500e0), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405286
+
+Package: glib-networking
+Version: 2.28.7-r2
+Depends: libproxy (>= 0.4.7), libcap2 (>= 2.22), libz1 (>= 1.2.6), libffi5 (>= 3.0.10), libgnutls26 (>= 2.12.17), libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), libtasn1-3 (>= 2.11), libgpg-error0 (>= 1.10), libgcrypt11 (>= 1.5.0)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405384
+
+Package: udev
+Version: 182-r9
+Depends: libkmod2 (>= 7), libblkid1 (>= 2.21), udev-utils, libc6 (>= 2.12)
+Provides: hotplug
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405260
+
+Package: pulseaudio-misc
+Version: 3.0-r45
+Depends: libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, sbc, libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405314
+
+Package: bluez4
+Version: 4.101-r54
+Depends: libdbus-1-3 (>= 1.4.16), libudev0 (>= 182), libreadline5 (>= 5.2), libusb-1.0-0 (>= 1.0.8), libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), libusb-0.1-4 (>= 0.1.3)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405295
+
+Package: python-mime
+Version: 2.7.2-r2.18
+Depends: python-core, python-io
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405341
+
+Package: e2fsprogs
+Version: 1.42.1-r1
+Depends: libss2 (>= 1.42.1), libcom-err2 (>= 1.42.1), libe2p2 (>= 1.42.1), e2fsprogs-blkid, e2fsprogs-badblocks, libc6 (>= 2.12), libblkid1 (>= 2.21), libuuid1 (>= 2.21)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405275
+
+Package: libpcap
+Version: 1.2.1-r1.0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405268
+
+Package: libtinyxml2
+Version: 1.0.6
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405361
+
+Package: python-xml
+Version: 2.7.2-r2.18
+Depends: python-core, libpython2.7-1.0 (>= 2.7.2), python-elementtree, python-re, libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405338
+
+Package: doppler-kernel-1.2
+Version: 1.3.0+git1+b2fb92dc07ef1e0c112475660660af2ce73fe89f
+Depends: mtd-utils, busybox, doppler, doppler-uboot
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405413
+
+Package: module-init-tools
+Version: 3.16-r0
+Depends: module-init-tools-depmod, libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405267
+
+Package: avahi-daemon
+Version: 0.6.31-r5.0
+Depends: libavahi-core7 (>= 0.6.31), libdaemon0 (>= 0.14), libcap2 (>= 2.22), libavahi-common3 (>= 0.6.31), libdbus-1-3 (>= 1.4.16), libc6 (>= 2.12), libexpat1 (>= 2.0.1)
+Recommends: libnss-mdns
+Provides:
+Status: install user installed
+Architecture: armv7a
+Conffiles:
+ /etc/avahi/avahi-daemon.conf aef4943065ce0314732e1e5322bbdbe3
+Installed-Time: 1475405289
+
+Package: libpryon
+Version: 2.0.463
+Depends: libarchive2
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405398
+
+Package: libncurses5
+Version: 5.9-r9.1
+Depends: libtinfo5 (>= 5.9), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405285
+
+Package: libpyglib-2.0-python0
+Version: 2.27.91-r4
+Depends: libffi5 (>= 3.0.10), libglib-2.0-0 (>= 2.32.4), libpython2.7-1.0 (>= 2.7.2), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405344
+
+Package: ncurses-terminfo-base
+Version: 5.9-r9.1
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405271
+
+Package: ssl-certificates-user-build
+Version: 1.0.463
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405415
+
+Package: libattr1
+Version: 2.4.46-r4
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405385
+
+Package: avahi-utils
+Version: 0.6.31-r5.0
+Depends: libavahi-common3 (>= 0.6.31), libavahi-client3 (>= 0.6.31), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405399
+
+Package: sysvinit-pidof
+Version: 2.88dsf-r6
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405260
+
+Package: gst-libav
+Version: 1.2.1-r2
+Depends: libz1 (>= 1.2.6), libavcodec54 (>= 9.9), libgsttag-1.0-0 (>= 1.2.1), libgstvideo-1.0-0 (>= 1.2.1), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), gstreamer (>= 1.2.1), libavformat54 (>= 9.9), libavutil52 (>= 9.9), libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), libgstpbutils-1.0-0 (>= 1.2.1), liborc-0.4-0 (>= 0.4.18), libbz2-0 (>= 1.0.6)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405380
+
+Package: libsndfile1
+Version: 1.0.25-r0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405292
+
+Package: pulseaudio-lib-bluetooth-util
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405304
+
+Package: gst-plugins-base-typefindfunctions
+Version: 1.2.1-r5
+Depends: gstreamer (>= 1.2.1), libgstvideo-1.0-0 (>= 1.2.1), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libgsttag-1.0-0 (>= 1.2.1), libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), libgstpbutils-1.0-0 (>= 1.2.1), liborc-0.4-0 (>= 0.4.18), gst-plugins-base
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405369
+
+Package: libss2
+Version: 1.42.1-r1
+Depends: libc6 (>= 2.12), libcom-err2 (>= 1.42.1)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405274
+
+Package: gst-plugins-good-autodetect
+Version: 1.2.1-r11
+Depends: libffi5 (>= 3.0.10), gst-plugins-good, libglib-2.0-0 (>= 2.32.4), gstreamer (>= 1.2.1), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405373
+
+Package: pulseaudio-module-udev-detect
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libsamplerate0 (>= 0.1.8), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libpulse0 (>= 3.0), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), libudev0 (>= 182), fftwf, pulseaudio (>= 3.0), libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405301
+
+Package: libcap2
+Version: 2.22-r3
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405289
+
+Package: tinylogin
+Version: 1.4-r9
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405246
+
+Package: task-doppler-pulseaudio
+Version: 1.0-r6
+Depends: pulseaudio-module-virtual-sink, pulseaudio-module-loopback, pulseaudio-module-card-restore, pulseaudio-module-combine-sink, pulseaudio-module-match, pulseaudio-module-udev-detect, pulseaudio-module-cli, pulseaudio-module-native-protocol-unix, pulseaudio-lib-protocol-native, pulseaudio-module-null-sink, pulseaudio-module-bluetooth-discover, libpulsecore, pulseaudio-lib-rtp, pulseaudio-module-device-manager, pulseaudio-module-switch-on-connect, pulseaudio-module-switch-on-port-available, pulseaudio-module-tunnel-sink, pulseaudio-module-bluetooth-device, pulseaudio-module-dbus-protocol, pulseaudio-module-null-source, pulseaudio-module-tunnel-source, pulseaudio-module-always-sink, pulseaudio-module-device-restore, pulseaudio-module-combine, pulseaudio-module-role-cork, pulseaudio-module-remap-sink, pulseaudio-module-virtual-source, pulseaudio-module-virtual-surround-sink, libpulse-simple0, pulseaudio-module-pipe-source, pulseaudio-lib-cli, pulseaudio-module-bluetooth-proximity, pulseaudio-module-bluetooth-policy, pulseaudio-module-pipe-sink, libpulse-mainloop-glib0, pulseaudio-module-equalizer-sink, pulseaudio-module-sine, pulseaudio-misc, pulseaudio-module-sine-source, pulseaudio-lib-protocol-simple, libpulse0, pulseaudio-module-position-event-sounds, pulseaudio-lib-bluetooth-util, pulseaudio, pulseaudio-server, pulseaudio-module-suspend-on-idle, pulseaudio-module-stream-restore, pulseaudio-module-default-device-restore, pulseaudio-module-rescue-streams, pulseaudio-module-volume-restore
+Provides:
+Status: install user installed
+Architecture: all
+Installed-Time: 1475405319
+
+Package: libcurl5
+Version: 7.33.0-r0
+Depends: libssl1.0.0 (>= 1.0.2f), libcrypto1.0.0 (>= 1.0.2f), libz1 (>= 1.2.6), libcares2 (>= 1.9.1), libc6 (>= 2.12)
+Recommends: curl-certs
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405355
+
+Package: python-fcntl
+Version: 2.7.2-r2.18
+Depends: python-core, libpython2.7-1.0 (>= 2.7.2), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405345
+
+Package: libboost-iostreams1.53.0
+Version: 1.53.0-r4.0
+Depends: libz1 (>= 1.2.6), libgcc1 (>= 4.5), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405320
+
+Package: gstreamer
+Version: 1.2.1-r4
+Depends: libffi5 (>= 3.0.10), libglib-2.0-0 (>= 2.32.4), libz1 (>= 1.2.6), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405365
+
+Package: pulseaudio-module-always-sink
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405309
+
+Package: pulseaudio-module-equalizer-sink
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), libfftwf (>= 3.2.2), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405313
+
+Package: liborc-0.4-0
+Version: 0.4.18-r1.0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405298
+
+Package: pulseaudio-module-combine-sink
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405300
+
+Package: htop
+Version: 0.9-r1
+Depends: ncurses-terminfo, libtinfo5 (>= 5.9), libncurses5 (>= 5.9), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405286
+
+Package: libupstart1
+Version: 1.10-r5
+Depends: libnih (>= 1.0.3), libdbus-1-3 (>= 1.4.16), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405256
+
+Package: libavahi-client3
+Version: 0.6.31-r5.0
+Depends: libavahi-common3 (>= 0.6.31), libdbus-1-3 (>= 1.4.16), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405398
+
+Package: metapackage-user
+Version: 1.1.463
+Depends: metapackage-base, ssl-certificates-user-build, firewall-rules-user-build
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405416
+
+Package: libz1
+Version: 1.2.6-r1
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405263
+
+Package: python-stringold
+Version: 2.7.2-r2.18
+Depends: python-core, libpython2.7-1.0 (>= 2.7.2), python-re, libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405340
+
+Package: libboost-atomic1.53.0
+Version: 1.53.0-r4.0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405325
+
+Package: libglib-2.0-0
+Version: 1:2.32.4-r5
+Depends: libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405294
+
+Package: pulseaudio-module-cli
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18), pulseaudio-lib-cli (>= 3.0)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405302
+
+Package: pulseaudio-module-bluetooth-proximity
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405312
+
+Package: python-logging
+Version: 2.7.2-r2.18
+Depends: python-core, python-io, python-lang, python-pickle, python-stringold
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405340
+
+Package: kindle-wifid
+Version: 1.3.463
+Depends: libxml2, libcurl5, iw, wpa-supplicant
+Provides:
+Status: install user installed
+Architecture: armv7a
+Conffiles:
+ /var/local/system/wifid.conf 5a73dbedc5f96a79f6d911143e0ca387
+ /var/local/system/hid.csv 09afaa63bee79e62f1cc827f893d94ca
+Installed-Time: 1475405358
+
+Package: python-subprocess
+Version: 2.7.2-r2.18
+Depends: python-core, python-io, python-fcntl, python-pickle, python-re
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405346
+
+Package: libtasn1-3
+Version: 2.11-r0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405383
+
+Package: netbase
+Version: 4.47-r3
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405261
+
+Package: task-doppler-boost
+Version: 1.0-r2
+Depends: libboost-iostreams1.53.0, libboost-system1.53.0, libboost-thread1.53.0, libboost-date-time1.53.0, libboost-program-options1.53.0, libboost-filesystem1.53.0, libboost-signals1.53.0, libboost-chrono1.53.0, libboost-regex1.53.0, boost-serialization, libboost-atomic1.53.0
+Provides:
+Status: install user installed
+Architecture: all
+Installed-Time: 1475405325
+
+Package: pulseaudio-module-switch-on-connect
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405306
+
+Package: gst-plugins-base-ogg
+Version: 1.2.1-r5
+Depends: libogg0 (>= 1.3.0), gstreamer (>= 1.2.1), libgstvideo-1.0-0 (>= 1.2.1), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libgsttag-1.0-0 (>= 1.2.1), libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), libgstriff-1.0-0 (>= 1.2.1), libgstpbutils-1.0-0 (>= 1.2.1), liborc-0.4-0 (>= 0.4.18), gst-plugins-base
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405371
+
+Package: fbset
+Version: 2.1-r4
+Depends: libc6 (>= 2.12)
+Recommends: fbset-modes
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405281
+
+Package: libgcc1
+Version: 4.5-r49+svnr184907
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405253
+
+Package: libgsttag-1.0-0
+Version: 1.2.1-r5
+Depends: libffi5 (>= 3.0.10), libglib-2.0-0 (>= 2.32.4), libz1 (>= 1.2.6), gstreamer (>= 1.2.1), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405368
+
+Package: libsqlite3
+Version: 3.7.17.1
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405361
+
+Package: fftwf
+Version: 3.2.2-r2
+Depends: libfftwf (>= 3.2.2), libc6 (>= 2.12)
+Provides: libfftw3
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405293
+
+Package: liblzo2-2
+Version: 2.06-r1
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405264
+
+Package: tslib-tests
+Version: 1.0+gitr1+e17263ef401ee885a27d649b90b577cfb44500e0-r8
+Depends: libts-1.0-0 (>= 1.0+gitr1+e17263ef401ee885a27d649b90b577cfb44500e0), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405282
+
+Package: ncurses
+Version: 5.9-r9.1
+Depends: libtinfo5 (>= 5.9), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405272
+
+Package: gst-plugins-base
+Version: 1.2.1-r5
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405366
+
+Package: doppler-tidsp-1.2
+Version: 1.2.463
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405410
+
+Package: gst-plugins-good-icydemux
+Version: 1.2.1-r11
+Depends: gstreamer (>= 1.2.1), libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libgsttag-1.0-0 (>= 1.2.1), gst-plugins-good, libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405375
+
+Package: libboost-thread1.53.0
+Version: 1.53.0-r4.0
+Depends: libgcc1 (>= 4.5), libboost-system1.53.0 (>= 1.53.0), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405321
+
+Package: libexpat1
+Version: 2.0.1-r1
+Depends: libgcc1 (>= 4.5), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405254
+
+Package: libasound2
+Version: 1.0.25-r1
+Depends: alsa-conf-base, libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405266
+
+Package: python-pygobject
+Version: 2.27.91-r4
+Depends: libpython2.7-1.0 (>= 2.7.2), libpyglib-2.0-python0 (>= 2.27.91), libffi5 (>= 3.0.10), python-textutils, libz1 (>= 1.2.6), python-core, libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405345
+
+Package: pulseaudio-module-loopback
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405300
+
+Package: libpulse-mainloop-glib0
+Version: 3.0-r45
+Depends: libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, sbc, libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405313
+
+Package: kindle-d
+Version: 1.3.463
+Depends: libxml2, libgcrypt11
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405353
+
+Package: pulseaudio-module-rescue-streams
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405316
+
+Package: ntpdate
+Version: 4.2.6p3-r10
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405350
+
+Package: ncurses-terminfo
+Version: 5.9-r9.1
+Depends: ncurses-terminfo-base
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405284
+
+Package: ldd
+Version: 2.12-r33
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405350
+
+Package: libudev0
+Version: 182-r9
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405256
+
+Package: libgpg-error0
+Version: 1.10-r1
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405352
+
+Package: gst-plugins-good-isomp4
+Version: 1.2.1-r11
+Depends: libz1 (>= 1.2.6), libgstvideo-1.0-0 (>= 1.2.1), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), libgstrtp-1.0-0 (>= 1.2.1), gstreamer (>= 1.2.1), libgsttag-1.0-0 (>= 1.2.1), gst-plugins-good, libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), libgstriff-1.0-0 (>= 1.2.1), libgstpbutils-1.0-0 (>= 1.2.1), liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405376
+
+Package: libltdl7
+Version: 2.4.2-r3.0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405291
+
+Package: speex
+Version: 1.2rc2-r2
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405298
+
+Package: python-pickle
+Version: 2.7.2-r2.18
+Depends: libpython2.7-1.0 (>= 2.7.2), python-codecs, python-core, python-io, libc6 (>= 2.12), python-re
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405339
+
+Package: pulseaudio-module-position-event-sounds
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405316
+
+Package: task-doppler-networking
+Version: 1.0-r4
+Depends: amazon-ca-certs, avahi, libupnp
+Provides:
+Status: install user installed
+Architecture: all
+Installed-Time: 1475405291
+
+Package: pulseaudio-module-default-device-restore
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405318
+
+Package: e2fsprogs-mke2fs
+Version: 1.42.1-r1
+Depends: libcom-err2 (>= 1.42.1), libe2p2 (>= 1.42.1), e2fsprogs (>= 1.42.1), libc6 (>= 2.12), libblkid1 (>= 2.21), libuuid1 (>= 2.21)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405276
+
+Package: libcjson
+Version: 1.0.1
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405359
+
+Package: doppler-version
+Version: 4148
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405243
+
+Package: libdbus-glib-1-2
+Version: 0.98-r1
+Depends: libffi5 (>= 3.0.10), libglib-2.0-0 (>= 2.32.4), libdbus-1-3 (>= 1.4.16), libz1 (>= 1.2.6), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405336
+
+Package: libe2p2
+Version: 1.42.1-r1
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405273
+
+Package: bluez-hcidump
+Version: 2.4-r0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405359
+
+Package: mpg123
+Version: 1.21.0-r0
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libpulse-simple0 (>= 3.0), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), libc6 (>= 2.12), libjson0 (>= 0.10)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405382
+
+Package: libdaemon0
+Version: 0.14-r0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405288
+
+Package: libogg0
+Version: 1.3.0-r0
+Depends: libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405370
+
+Package: doppler-console-image
+Version: 1.0.0
+Depends: task-core-boot, task-doppler-base, task-doppler-console, task-doppler-networking, task-doppler-pulseaudio, task-doppler-boost, udev, upstart, upstart-sysvcompat, initscripts, opkg, iperf, openssl, dnsmasq, evtest, python-core, python-re, python-readline, ofono, python-json, python-codecs, python-dbus, python-netserver, python-pygobject, python-subprocess, python-threading, syslog-ng, gst-plugins-good, iw, iptables, ldd, bash, openntpd, ntpdate, civetweb
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405352
+
+Package: libnss-mdns
+Version: 0.10-r4
+Depends: avahi-daemon, libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405290
+
+Package: pulseaudio-module-pipe-sink
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405313
+
+Package: libboost-regex1.53.0
+Version: 1.53.0-r4.0
+Depends: libgcc1 (>= 4.5), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405324
+
+Package: libavahi-core7
+Version: 0.6.31-r5.0
+Depends: libavahi-common3 (>= 0.6.31), libc6 (>= 2.12)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405288
+
+Package: pulseaudio-module-tunnel-sink
+Version: 3.0-r45
+Depends: libltdl7 (>= 2.4.2), libpulse0 (>= 3.0), libsndfile1 (>= 1.0.25), libjson0 (>= 0.10), libsamplerate0 (>= 0.1.8), libcap2 (>= 2.22), libdbus-1-3 (>= 1.4.16), pulseaudio (>= 3.0), fftwf, libpulsecore (>= 3.0), speex (>= 1.2rc2), libc6 (>= 2.12), sbc, liborc-0.4-0 (>= 0.4.18)
+Provides:
+Status: install user installed
+Architecture: armv7a
+Installed-Time: 1475405306
+

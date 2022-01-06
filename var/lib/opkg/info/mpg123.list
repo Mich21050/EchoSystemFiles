@@ -1,0 +1,11 @@
+/usr/bin/mpg123-strip
+/usr/bin/mpg123-id3dump
+/usr/lib/libmpg123.so.0.40.3
+/usr/lib/mpg123/
+/usr/bin/out123
+/usr/lib/mpg123/output_dummy.la
+/usr/lib/libmpg123.so.0
+/usr/lib/mpg123/output_dummy.so
+/usr/lib/mpg123/output_pulse.la
+/usr/lib/mpg123/output_pulse.so
+/usr/bin/mpg123

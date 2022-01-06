@@ -1,0 +1,13 @@
+Package: libsoup-2.4-1
+Version: 2.38.1-r1
+Description: libsoup-2.4 version 2.38.1-r1
+ An HTTP library implementation in C
+Section: x11/gnome/libs
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: LGPLv2
+Architecture: armv7a
+OE: libsoup-2.4
+Homepage: http://www.gnome.org/
+Depends: libffi5 (>= 3.0.10), libxml2 (>= 2.7.8), libglib-2.0-0 (>= 2.32.4), libz1 (>= 1.2.6), libc6 (>= 2.12)
+Source: http://ftp.gnome.org/pub/GNOME/sources/libsoup/2.38/libsoup-2.38.1.tar.xz

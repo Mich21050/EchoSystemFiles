@@ -1,0 +1,12 @@
+Package: opkg-config-base
+Version: 1.0-r1
+Description: opkg-config-base version 1.0-r1
+ Base configuration files for opkg
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: MIT
+Architecture: doppler
+OE: opkg-config-base
+Homepage: unknown
+Source: None

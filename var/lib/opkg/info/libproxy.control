@@ -1,0 +1,13 @@
+Package: libproxy
+Version: 0.4.7-r4
+Description: libproxy version 0.4.7-r4
+ A library that provides automatic proxy configuration management
+Section: libs
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: LGPLv2.1+
+Architecture: armv7a
+OE: libproxy
+Homepage: http://code.google.com/p/libproxy/
+Depends: libgcc1 (>= 4.5), libglib-2.0-0 (>= 2.32.4), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Source: http://libproxy.googlecode.com/files/libproxy-0.4.7.tar.gz file://g++-namepace.patch file://libproxy_fix_for_gcc4.7.patch

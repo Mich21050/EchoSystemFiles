@@ -1,0 +1,10 @@
+Package: kindle-wifid
+Version: 1.3.463
+Section: devel
+Priority: optional
+Architecture: armv7a
+Depends: libxml2, libcurl5, iw, wpa-supplicant
+Installed-Size: 9421
+Maintainer: dee-device-software@amazon.com
+Description: Kindle wifid
+

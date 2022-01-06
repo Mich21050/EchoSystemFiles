@@ -1,0 +1,9 @@
+Package: libtinyxml2
+Version: 1.0.6
+Section: devel
+Priority: optional
+Architecture: armv7a
+Installed-Size: 206
+Maintainer: dee-device-software@amazon.com
+Description: tinyxml2 1.0.6
+

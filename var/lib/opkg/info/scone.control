@@ -1,0 +1,18 @@
+Package: scone
+Version: 1.0.323
+Source: scone 
+Section: Scone
+Priority: optional
+Architecture: any
+Essential: no
+Depends:
+Pre-Depends:
+Recommends:
+Suggests:
+Installed-Size:
+Maintainer: Device Software team <doppler-device-software@amazon.com>
+Conflicts:
+Replaces:
+Breaks:
+Provides:
+Description: Scone Firmware Binary

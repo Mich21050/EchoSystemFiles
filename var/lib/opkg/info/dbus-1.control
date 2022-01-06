@@ -1,0 +1,19 @@
+Package: dbus-1
+Version: 1.4.16-r11.1
+Description: D-Bus message bus
+ D-Bus is a message bus system, a simple way for applications to talk to
+ one another. In addition to interprocess communication, D-Bus helps
+ coordinate process lifecycle; it makes it simple and reliable to code a
+ \"single instance\" application or daemon, and to launch applications and
+ daemons on demand when their services are needed.
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: AFL-2 | GPLv2+
+Architecture: armv7a
+OE: dbus
+Homepage: http://dbus.freedesktop.org
+Depends: libdbus-1-3 (>= 1.4.16), libexpat1 (>= 2.0.1), base-passwd, libc6 (>= 2.12)
+Provides: dbus-x11
+Replaces: dbus-x11
+Source: http://dbus.freedesktop.org/releases/dbus/dbus-1.4.16.tar.gz file://tmpdir.patch; file://upstart-dbus.conf

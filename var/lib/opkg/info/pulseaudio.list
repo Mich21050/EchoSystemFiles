@@ -1,0 +1,6 @@
+/usr/lib/pulseaudio/
+/usr/lib/pulseaudio/libpulsecommon-3.0.la
+/usr/share/pulseaudio/
+/usr/lib/pulseaudio/libpulsecommon-3.0.so
+/usr/libexec/pulse/proximity-helper
+/usr/libexec/pulse/

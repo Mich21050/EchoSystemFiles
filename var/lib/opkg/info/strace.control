@@ -1,0 +1,13 @@
+Package: strace
+Version: 4.6-r1
+Description: strace version 4.6-r1
+ strace is a system call tracing tool.
+Section: console/utils
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: BSD
+Architecture: armv7a
+OE: strace
+Homepage: http://strace.sourceforge.net
+Depends: libc6 (>= 2.12)
+Source: http://downloads.sourceforge.net/strace/strace-4.6.tar.xz file://sigmask.patch file://strace-4.6_add_x32_support.patch

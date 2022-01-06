@@ -1,0 +1,14 @@
+Package: pulseaudio-server
+Version: 3.0-r45
+Description: pulseaudio version 3.0-r45
+ Pulseaudio is a sound server for Linux and Unix-like operating systems.
+Section: libs/multimedia
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2+ & LGPLv2.1
+Architecture: armv7a
+OE: pulseaudio
+Homepage: http://www.pulseaudio.org
+Depends: speex (>= 1.2rc2), libltdl7 (>= 2.4.2), libjson0 (>= 0.10), pulseaudio-module-rescue-streams, pulseaudio-module-detect, pulseaudio-module-native-protocol-unix, pulseaudio-module-null-sink, libpulsecore (>= 3.0), liborc-0.4-0 (>= 0.4.18), pulseaudio-module-device-restore, pulseaudio-module-always-sink, pulseaudio-module-udev-detect, pulseaudio-module-stream-restore, pulseaudio-module-role-cork, libdbus-1-3 (>= 1.4.16), libsamplerate0 (>= 0.1.8), libsndfile1 (>= 1.0.25), libcap2 (>= 2.22), libc6 (>= 2.12), libpulse0 (>= 3.0), pulseaudio-module-position-event-sounds, pulseaudio (>= 3.0), pulseaudio-module-suspend-on-idle, pulseaudio-module-card-restore, base-passwd, pulseaudio-module-default-device-restore
+Replaces: libpulse-bin, libpulse-conf
+Source: git://iot-gerrit/echo/open-source/pulseaudio.git;branch=master;protocol=ssh file://volatiles.04_pulse

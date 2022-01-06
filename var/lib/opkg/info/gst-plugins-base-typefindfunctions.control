@@ -1,0 +1,13 @@
+Package: gst-plugins-base-typefindfunctions
+Version: 1.2.1-r5
+Description: gst-plugins-base version 1.2.1-r5
+ GStreamer plugin for typefindfunctions
+Section: multimedia
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2+ & LGPLv2+
+Architecture: armv7a
+OE: gst-plugins-base
+Homepage: http://gstreamer.freedesktop.org/
+Depends: gstreamer (>= 1.2.1), libgstvideo-1.0-0 (>= 1.2.1), libgstaudio-1.0-0 (>= 1.2.1), libffi5 (>= 3.0.10), libz1 (>= 1.2.6), libgsttag-1.0-0 (>= 1.2.1), libc6 (>= 2.12), libglib-2.0-0 (>= 2.32.4), libgstpbutils-1.0-0 (>= 1.2.1), liborc-0.4-0 (>= 0.4.18), gst-plugins-base
+Source: http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.2.1.tar.xz file://fix-sink-gettime-deadlock.patch

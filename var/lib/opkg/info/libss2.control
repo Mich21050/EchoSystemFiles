@@ -1,0 +1,15 @@
+Package: libss2
+Version: 1.42.1-r1
+Description: Ext2 Filesystem Utilities
+ The Ext2 Filesystem Utilities (e2fsprogs) contain all of the standard
+ utilities for creating, fixing, configuring , and debugging ext2
+ filesystems.
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2 & LGPLv2 & BSD & MIT
+Architecture: armv7a
+OE: e2fsprogs
+Homepage: http://e2fsprogs.sourceforge.net/
+Depends: libc6 (>= 2.12), libcom-err2 (>= 1.42.1)
+Source: http://downloads.sourceforge.net/e2fsprogs/e2fsprogs-1.42.1.tar.gz file://mkdir.patch file://fallocate.patch file://acinclude.m4 file://remove.ldconfig.call.patch file://e2fsck.conf

@@ -1,0 +1,14 @@
+Package: libthrift
+Version: 0.9.0-r0
+Description: thrift
+ Apache Thrift is a software framework for building cross platform
+ services.
+Section: devel
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: Apache-2.0
+Architecture: armv7a
+OE: thrift
+Homepage: http://thrift.apache.org/
+Depends: libgcc1 (>= 4.5), libcrypto1.0.0 (>= 1.0.2f), libc6 (>= 2.12), libssl1.0.0 (>= 1.0.2f), libstdc++6 (>= 4.5)
+Source: http://archive.apache.org/dist/thrift/0.9.0/thrift-0.9.0.tar.gz

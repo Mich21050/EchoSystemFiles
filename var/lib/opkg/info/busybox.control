@@ -1,0 +1,21 @@
+Package: busybox
+Version: 1.19.4-r15
+Description: Tiny versions of many common UNIX utilities in a single small executable.
+ BusyBox combines tiny versions of many common UNIX utilities into a
+ single small executable. It provides minimalist replacements for most of
+ the utilities you usually find in GNU fileutils, shellutils, etc. The
+ utilities in BusyBox generally have fewer options than their full-
+ featured GNU cousins; however, the options that are included provide the
+ expected functionality and behave very much like their GNU counterparts.
+ BusyBox provides a fairly complete POSIX environment for any small or
+ embedded system.
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2 & BSD-4-Clause
+Architecture: armv7a
+OE: busybox
+Homepage: http://www.busybox.net
+Depends: libc6 (>= 2.12)
+Recommends: busybox-udhcpc
+Source: http://www.busybox.net/downloads/busybox-1.19.4.tar.bz2;name=tarball file://udhcpscript.patch file://udhcpc-fix-nfsroot.patch file://B921600.patch file://get_header_tar.patch file://busybox-appletlib-dependency.patch file://run-parts.in.usr-bin.patch file://watch.in.usr-bin.patch file://busybox-udhcpc-no_deconfig.patch file://find-touchscreen.sh file://busybox-cron file://upstart-busybox-cron.conf file://busybox-httpd file://busybox-udhcpd file://busybox-udhcpc file://upstart-busybox-udhcpc.conf file://default.script file://simple.script file://hwclock.sh file://mount.busybox file://syslog file://syslog-startup.conf file://mdev file://mdev.conf file://umount.busybox file://defconfig

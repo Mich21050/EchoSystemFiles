@@ -1,0 +1,92 @@
+#!/bin/sh
+#
+# Copyright (c) 2013 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+#
+# PROPRIETARY/CONFIDENTIAL
+#
+# Use is subject to license terms.
+
+# Binaries
+MOUNTPOINT=/bin/mountpoint
+LOGGER=/usr/bin/logger
+MKTEMP=/bin/mktemp
+MOUNT=/bin/mount
+UMOUNT=/bin/umount
+CP=/bin/cp
+MV=/bin/mv
+RMDIR=/bin/rmdir
+BOARDQUERY=/usr/local/bin/boardquery
+# Diagnostic info
+PACKAGE_NAME="doppler-uboot"
+# U-boot
+UBOOT_MTD="/dev/mtd1"
+UBOOT_PARTLABEL="/dev/disk/by-partlabel/boot"
+# Image file
+IMAGE_FILE="/boot/u-boot.bin"
+
+# Default root directory
+ROOT_DIR="/"
+
+LOG_INFO () {
+    ${LOGGER} -s -t "opkg[$$]" -p local4.info "I ${PACKAGE_NAME}::$@"
+}
+
+LOG_ERROR() {
+    ${LOGGER} -s -t "opkg[$$]" -p local4.error "E ${PACKAGE_NAME}::$@"
+}
+
+DIE() {
+    LOG_ERROR $@
+    exit 1
+}
+
+# If in a sysroot, use the suggested root dir as reference
+if [ "x$D" != "x" ]; then
+    ROOT_DIR="$D"
+fi
+
+if [ ! -e "${ROOT_DIR}${IMAGE_FILE}" ]; then
+    LOG_ERROR "Cannot find u-boot image: ${ROOT_DIR}${IMAGE_FILE}"
+    exit 1
+fi
+
+if ${BOARDQUERY} has_eMMC; then
+    if [ ! -e "${UBOOT_PARTLABEL}" ]; then
+        LOG_ERROR "Cannot find u-boot partition: ${UBOOT_PARTLABEL}"
+        exit 1
+    fi
+
+    LOG_INFO "copying to ${UBOOT_PARTLABEL}"
+
+    UBOOT_MOUNT=$(${MKTEMP} -d) || DIE "Failed to create temporary directory"
+
+    ${MOUNT} ${UBOOT_PARTLABEL} ${UBOOT_MOUNT} || DIE "Failed to mount"
+
+    RESULT=0
+
+    if ! ${CP} "${ROOT_DIR}${IMAGE_FILE}" "${UBOOT_MOUNT}/u-boot.tmp" ||
+       ! ${MV} "${UBOOT_MOUNT}/u-boot.tmp" "${UBOOT_MOUNT}/u-boot.bin"; then
+        LOG_ERROR "Failed to install image"
+        RESULT=1
+    fi
+
+    ${UMOUNT} ${UBOOT_MOUNT} || DIE "Failed to unmount"
+    ${RMDIR} ${UBOOT_MOUNT} || DIE "Failed to remove temporary directory"
+
+    exit ${RESULT}
+elif ${BOARDQUERY} has_NAND; then
+    if [ ! -e "${UBOOT_MTD}" ]; then
+        LOG_ERROR "Cannot find u-boot mtd partition: ${UBOOT_MTD}"
+        exit 1
+    fi
+
+    LOG_INFO "flashing to ${UBOOT_MTD}"
+
+    # Write U-boot
+    /usr/sbin/flash_erase -q ${UBOOT_MTD} 0 0
+    /usr/sbin/nandwrite ${UBOOT_MTD} "${ROOT_DIR}${IMAGE_FILE}" -p
+else
+    LOG_ERROR "Could not detect flash type: " $(${BOARDQUERY} flash)
+fi
+
+exit 0

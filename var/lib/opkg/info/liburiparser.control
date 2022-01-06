@@ -1,0 +1,9 @@
+Package: liburiparser
+Version: 0.7.5.1
+Section: devel
+Priority: optional
+Architecture: armv7a
+Installed-Size: 328
+Maintainer: dee-device-software@amazon.com
+Description: Uriparser RFC 3986 version 0.7.5.1
+

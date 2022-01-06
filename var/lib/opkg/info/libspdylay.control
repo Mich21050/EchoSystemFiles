@@ -1,0 +1,9 @@
+Package: libspdylay
+Version: 1.2.3.1
+Section: devel
+Priority: optional
+Architecture: armv7a
+Installed-Size: 300
+Maintainer: dee-device-software@amazon.com
+Description: Spdylay 1.2.3.1
+

@@ -1,0 +1,5 @@
+Jan  6 01:31:24 localhost ntpd[2007]: metric_high_priority,1641432684,counter,ntpd,ntp_main,NtpdPeerAttempt_2.north-america.pool.ntp.org,1
+Jan  6 01:31:53 localhost ntpd[2007]: metric_high_priority,1641432713,counter,ntpd,ntp_main,NtpdPeerAttempt_3.north-america.pool.ntp.org,1
+Jan  6 01:32:16 localhost ntpd[2007]: metric_high_priority,1641432736,counter,ntpd,ntp_main,NtpdPeerAttempt_ntp-g7g.amazon.com,1
+Jan  6 01:33:03 localhost ntpd[2007]: metric_high_priority,1641432783,counter,ntpd,ntp_main,NtpdPeerAttempt_1.north-america.pool.ntp.org,1
+Jan  6 01:33:41 localhost ntpd[2007]: metric_high_priority,1641432821,counter,ntpd,ntp_main,NtpdPeerAttempt_0.north-america.pool.ntp.org,1

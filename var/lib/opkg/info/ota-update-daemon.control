@@ -1,0 +1,10 @@
+Package: ota-update-daemon
+Version: 1.0.463
+Section: devel
+Priority: optional
+Architecture: armv7a
+Depends: busybox, opkg, libs3auth, libotaup
+Installed-Size: 1652
+Maintainer: dee-device-software@amazon.com
+Description: OTA Update service
+

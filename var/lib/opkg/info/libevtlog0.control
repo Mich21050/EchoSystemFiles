@@ -1,0 +1,13 @@
+Package: libevtlog0
+Version: 0.2.12-r0
+Description: eventlog version 0.2.12-r0
+ Replacement syslog API
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: BSD
+Architecture: armv7a
+OE: eventlog
+Homepage: unknown
+Depends: libc6 (>= 2.12)
+Source: http://www.balabit.com/downloads/files/syslog-ng/sources/3.2.2/source/eventlog_0.2.12.tar.gz

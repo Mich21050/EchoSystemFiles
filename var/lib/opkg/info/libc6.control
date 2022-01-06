@@ -1,0 +1,17 @@
+Package: libc6
+Version: 2.12-r33
+Description: Embedded GLIBC (GNU C Library)
+ Embedded GLIBC (EGLIBC) is a variant of the GNU C Library (GLIBC) that is
+ designed to work well on embedded systems. EGLIBC strives to be source
+ and binary compatible with GLIBC. EGLIBC's goals include reduced
+ footprint, configurable components, better support for cross-compilation
+ and cross-testing.
+Section: libs
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2 & LGPLv2.1
+Architecture: armv7a
+OE: eglibc
+Homepage: http://www.eglibc.org/home
+Provides: rtld(GNU_HASH), glibc
+Source: svn://www.eglibc.org/svn/branches/;module=eglibc-2_12;proto=http file://eglibc-svn-arm-lowlevellock-include-tls.patch file://IO-acquire-lock-fix.patch file://shorten-build-commands.patch file://mips-rld-map-check.patch file://armv4-eabi-compile-fix.patch file://ppc-enable-603e-cpu.patch file://etc/ld.so.conf file://generate-supported.mk file://etc/ld.so.conf file://nss_hostname_digits_dots-heap-based-buffer-overflow.patch

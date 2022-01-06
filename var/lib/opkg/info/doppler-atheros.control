@@ -1,0 +1,8 @@
+Package: doppler-atheros
+Version: 1.2.463
+Section: base
+Priority: optional
+Architecture: armv7a
+Depends: atheros-external
+Maintainer: dee-device-software@amazon.com
+Description: Atheros for Doppler

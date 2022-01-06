@@ -1,0 +1,6 @@
+udhcpc (v1.19.4) started
+Sending discover...
+Sending select for 192.168.1.61...
+Lease of 192.168.1.61 obtained, lease time 86400
+deleting default gateway for wlan0
+adding default gateway for wlan0 - wlan0

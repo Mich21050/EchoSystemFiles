@@ -1,0 +1,10 @@
+Package: libotaup
+Version: 0.2.463
+Section: devel
+Priority: optional
+Architecture: armv7a
+Depends: kindle-d, protobuf, libcurl5, libs3auth (>= 0.2)
+Installed-Size: 2059
+Maintainer: dee-device-software@amazon.com
+Description: OTA Update Library
+

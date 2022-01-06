@@ -1,0 +1,9 @@
+Package: ssl-certificates-user-build
+Version: 1.0.463
+Section: devel
+Priority: optional
+Architecture: armv7a
+Installed-Size: 247
+Maintainer: dee-device-software@amazon.com
+Description: SSL Certificates for user builds
+

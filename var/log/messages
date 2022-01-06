@@ -1,0 +1,52 @@
+20220106:013002 syslog-ng[808]: Configuration reload request received, reloading configuration;
+20220106:013003 system: I tinyrot:def::Rotating file /var/log/metrics_generic with max size 128
+20220106:013003 syslog-ng[808]: Configuration reload request received, reloading configuration;
+20220106:013004 system: I tinyrot:def::Rotating file /var/log/cron.log with max size 64
+20220106:013004 syslog-ng[808]: Configuration reload request received, reloading configuration;
+20220106:013004 wifid[1643]: I wmgr:wconn:rssi=-59,noise=500,snr=-559,bar=5::~:
+20220106:013005 system: I tinyrot:def::Rotating file /var/log/kern.log with max size 64
+20220106:013005 syslog-ng[808]: Configuration reload request received, reloading configuration;
+20220106:013024 wifid[1643]: I wmgr:wconn:rssi=-60,noise=500,snr=-560,bar=5::~:
+20220106:013028 audioproxyd[1413]: W audioproxyd:W:Mic Average Power 41.426084 dB (0.000000):
+20220106:013100 audioproxyd[1413]: W audioproxyd:W:Mic Average Power 37.034633 dB (0.000000):
+20220106:013102 whad[1308]: I TimeSyncClient:clientThread:totalStats:sent=20392,recvdOnTime=20388,lateOrDuplicate=11,slots=834,emptySlots=0,activeSec=847,elapsedSec=9001
+20220106:013102 whad[1308]: I TimeSyncClient:clientThread:recentStats:sent=1463,recvdOnTime=1461,lateOrDuplicate=0,slots=60,emptySlots=0,activeSec=62,elapsedSec=900
+20220106:013102 whad[1308]: I TimeSyncClient:clientThread:recentRoundTripsMs: [0,50):1450, [50,100):10, [100,150):1, avg:8, min:1, max:104
+20220106:013104 wifid[1643]: I wmgr:wconn:rssi=-61,noise=500,snr=-561,bar=5::~:
+20220106:013120 whad[1308]: I DeviceClusterManager:onHeartBeat:seq=902,xmit=1879234592413384,recv=827500442857027,uniqueId=XX0HK3,highNetworkLatency=0
+20220106:013133 audioproxyd[1413]: W audioproxyd:W:Mic Average Power 44.017106 dB (0.000000):
+20220106:013144 whad[1308]: I HttpServerCivetWeb:handlePost:cmd=testVisibility,xmit=827524034,recv=827524659,delta=625,senderId=XX1HGK
+20220106:013153 whad[1308]: I HttpServerCivetWeb:handlePost:cmd=testVisibility,xmit=1812866801,recv=827533180,delta=-985333621,senderId=XX3EEV
+20220106:013154 whad[1308]: I HttpServerCivetWeb:handlePost:cmd=testVisibility,xmit=827534764,recv=827534773,delta=9,senderId=XX1HGK
+20220106:013203 whad[1308]: I HttpServerCivetWeb:handlePost:cmd=testVisibility,xmit=1812877284,recv=827543433,delta=-985333851,senderId=XX3EEV
+20220106:013204 whad[1308]: I HttpServerCivetWeb:handlePost:cmd=testVisibility,xmit=827544899,recv=827544905,delta=6,senderId=XX1HGK
+20220106:013204 wifid[1643]: I wmgr:wconn:rssi=-60,noise=500,snr=-560,bar=5::~:
+20220106:013206 audioproxyd[1413]: W audioproxyd:W:Mic Average Power 44.515101 dB (0.000000):
+20220106:013213 whad[1308]: I HttpServerCivetWeb:handlePost:cmd=testVisibility,xmit=1812887374,recv=827553522,delta=-985333852,senderId=XX3EEV
+20220106:013215 whad[1308]: I HttpServerCivetWeb:handlePost:cmd=testVisibility,xmit=827555037,recv=827555042,delta=5,senderId=XX1HGK
+20220106:013223 whad[1308]: I HttpServerCivetWeb:handlePost:cmd=testVisibility,xmit=1812897464,recv=827563612,delta=-985333852,senderId=XX3EEV
+20220106:013225 whad[1308]: I HttpServerCivetWeb:handlePost:cmd=testVisibility,xmit=827565177,recv=827565186,delta=9,senderId=XX1HGK
+20220106:013233 whad[1308]: I HttpServerCivetWeb:handlePost:cmd=testVisibility,xmit=1812907516,recv=827573666,delta=-985333850,senderId=XX3EEV
+20220106:013239 audioproxyd[1413]: W audioproxyd:W:Mic Average Power 45.187771 dB (0.000000):
+20220106:013244 wifid[1643]: I wmgr:wconn:rssi=-61,noise=500,snr=-561,bar=5::~:
+20220106:013249 wifid[1643]: I wifiddiags:event:handleCtrlEvent (RunTestContinuously):
+20220106:013249 wifid[1643]: I def:ReportNetworkStatistics::rx_bytes = 76622821, rx_packets = 939051, tx_bytes = 106606471, tx_packets = 649744
+20220106:013249 wifid[1643]: I wifiddiags:pingTest::TARGET_TYPE=PING_TARGET_GATEWAY,IP=xxx.xxx.1.1
+20220106:013249 wifid[1643]: I wifiddiags:pingTestResults::TARGET_TYPE=PING_TARGET_GATEWAY,IP=192.168.1.1,PKTS_TX=5,PKTS_RX=5,PKT_LOSS=0.00%,AVG_TIME=4.40ms
+20220106:013249 wifid[1643]: I wifiddiags:updatePingStats::Updated stats: 355 0 4.43 0
+20220106:013249 wifid[1643]: I wifiddiags:pingTest::TARGET_TYPE=PING_TARGET_NAMESERVER,IP=xxx.xxx.1.1
+20220106:013249 wifid[1643]: I wifiddiags:pingTestResults::TARGET_TYPE=PING_TARGET_NAMESERVER,IP=192.168.1.1,PKTS_TX=5,PKTS_RX=5,PKT_LOSS=0.00%,AVG_TIME=3.60ms
+20220106:013249 wifid[1643]: I wifiddiags:updatePingStats::Updated stats: 360 0 4.41 0
+20220106:013249 wifid[1643]: I wifiddiags:pingTest:event=PreConfiguredExtNsDetected,ns=xxx.xxx.8.8,action=SkipPingTest:
+20220106:013249 wifid[1643]: I wifiddiags:pingTest:event=PreConfiguredExtNsDetected,ns=xxx.xxx.220.220,action=SkipPingTest:
+20220106:013249 wifid[1643]: I sysev:dispatch:code=PingSucess:
+20220106:013249 wifid[1643]: I wmgr:onPingSuccessEvent::
+20220106:013249 wifid[1643]: I wifiddiags:runHttpConnectionTest:event=runHttpConnectionTestAttempt,host=d3p8zr0ffa9t17.cloudfront.net/HTTPConnTest.txt:
+20220106:013249 wifid[1643]: I wifiddiags:runHttpConnectionTestSuccess:host=d3p8zr0ffa9t17.cloudfront.net/HTTPConnTest.txt,httpCode=200,latency=132.60ms:
+20220106:013249 wifid[1643]: I sysev:dispatch:code=HttpConnSuccess:
+20220106:013302 whad[1308]: I TimeSyncClient:clientThread:reason=skewOrDriftChange,master=XX1HGK,time=9305.846008,skewX=7895.387591,skewY=818296.014740,drift=29.918148,reportedDrift=29.918148,numExchanges=20587
+20220106:013302 whad[1308]: W TimeSyncCacher:writeCache:No writable directory.
+20220106:013305 wifid[1643]: I wmgr:wconn:rssi=-60,noise=500,snr=-560,bar=5::~:
+20220106:013311 audioproxyd[1413]: W audioproxyd:W:Mic Average Power 45.006344 dB (0.000000):
+20220106:013344 audioproxyd[1413]: W audioproxyd:W:Mic Average Power 39.744196 dB (0.000000):
+20220106:013344 wifid[1643]: I wmgr:wconn:rssi=-61,noise=500,snr=-561,bar=5::~:

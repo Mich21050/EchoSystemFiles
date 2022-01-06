@@ -1,0 +1,4 @@
+feb6222cfb2d0086ec8b309ed01071b8  etc/init/spotify-prep.conf
+39680573b39163ecf74d284aa4985ec6  etc/init/spotifyd.conf
+141cfbaecbd38ffa2e73d11b4349b1ff  usr/local/bin/spotifyd
+a6a44bca387e3feaa0ca3e7ff23b0bb1  usr/local/lib/libspotify_embedded_shared.so

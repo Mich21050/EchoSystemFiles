@@ -1,0 +1,13 @@
+Package: libtic5
+Version: 5.9-r9.1
+Description: The New Curses library
+ ncurses tic library
+Section: libs
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: MIT
+Architecture: armv7a
+OE: ncurses
+Homepage: http://www.gnu.org/software/ncurses/ncurses.html
+Depends: libtinfo5 (>= 5.9), libc6 (>= 2.12)
+Source: ftp://ftp.gnu.org/gnu/ncurses/ncurses-5.9.tar.gz file://tic-hang.patch file://config.cache

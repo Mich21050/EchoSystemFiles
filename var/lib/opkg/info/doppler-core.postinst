@@ -1,0 +1,9 @@
+#!/bin/sh
+
+LDCONFIG_OPTS=
+
+if [ x"$D" != "x" ]; then
+  LDCONFIG_OPTS="-r $D"
+fi
+
+[ -x /sbin/ldconfig ] && /sbin/ldconfig $LDCONFIG_OPTS

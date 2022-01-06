@@ -1,0 +1,13 @@
+Package: iw
+Version: 3.2-r1
+Description: iw version 3.2-r1
+ nl80211 based CLI configuration utility for wireless devices
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: BSD
+Architecture: armv7a
+OE: iw
+Homepage: http://linuxwireless.org/en/users/Documentation/iw
+Depends: libnl-genl-3-200 (>= 3.2.3), libnl-3-200 (>= 3.2.3), libc6 (>= 2.12)
+Source: http://www.kernel.org/pub/software/network/iw/iw-3.2.tar.bz2 file://0001-iw-version.sh-don-t-use-git-describe-for-versioning.patch

@@ -1,0 +1,13 @@
+Package: wpa-supplicant
+Version: 1.0-r10
+Description: WPA Supplicant
+ WPA Supplicant with support for WPA and WPA2.
+Section: libs
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2 | BSD
+Architecture: armv7a
+OE: wpa-supplicant
+Homepage: http://hostap.epitest.fi/wpa_supplicant/
+Depends: libnl1 (>= 1.1), libc6 (>= 2.12)
+Source: git://iot-gerrit/echo/open-source/wpa_supplicant.git;branch=master;protocol=ssh file://libnl_dependencies.patch file://wpa-supplicant.pc

@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ x"$D" = "x" ]; then
+	[ -x /sbin/ldconfig ] && /sbin/ldconfig
+fi
+	cat $D/etc/nsswitch.conf | grep "hosts:\s*files dns$" > /dev/null && {
+		sed -i 's/hosts:\s*files dns/& mdns4/' $D/etc/nsswitch.conf
+	}

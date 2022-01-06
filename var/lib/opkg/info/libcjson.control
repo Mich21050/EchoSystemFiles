@@ -1,0 +1,9 @@
+Package: libcjson
+Version: 1.0.1
+Section: devel
+Priority: optional
+Architecture: armv7a
+Installed-Size: 49
+Maintainer: dee-device-software@amazon.com
+Description: cJSON 1.0.0
+

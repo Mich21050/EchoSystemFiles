@@ -1,0 +1,9 @@
+Package: libnl
+Version: 3.2.11.1
+Section: devel
+Priority: optional
+Architecture: armv7a
+Installed-Size: 2985
+Maintainer: dee-device-software@amazon.com
+Description: libnl 3.2.11
+

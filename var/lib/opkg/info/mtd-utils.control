@@ -1,0 +1,13 @@
+Package: mtd-utils
+Version: 1.4.9-r1
+Description: mtd-utils version 1.4.9-r1
+ Tools for managing memory technology devices.
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2+
+Architecture: armv7a
+OE: mtd-utils
+Homepage: http://www.linux-mtd.infradead.org/
+Depends: libz1 (>= 1.2.6), liblzo2-2 (>= 2.06), libuuid1 (>= 2.21), libc6 (>= 2.12)
+Source: git://git.infradead.org/mtd-utils.git;protocol=git;tag=995cfe51b0a3cf32f381c140bf72b21bf91cef1b file://add-exclusion-to-mkfs-jffs2-git-2.patch

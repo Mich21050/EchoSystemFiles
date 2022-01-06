@@ -1,0 +1,13 @@
+Package: task-doppler-pulseaudio
+Version: 1.0-r6
+Description: task-doppler-pulseaudio version 1.0-r6
+ Extended task to install pulseaudio related packages for doppler
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: MIT
+Architecture: all
+OE: task-doppler-pulseaudio
+Homepage: unknown
+Depends: pulseaudio-module-virtual-sink, pulseaudio-module-loopback, pulseaudio-module-card-restore, pulseaudio-module-combine-sink, pulseaudio-module-match, pulseaudio-module-udev-detect, pulseaudio-module-cli, pulseaudio-module-native-protocol-unix, pulseaudio-lib-protocol-native, pulseaudio-module-null-sink, pulseaudio-module-bluetooth-discover, libpulsecore, pulseaudio-lib-rtp, pulseaudio-module-device-manager, pulseaudio-module-switch-on-connect, pulseaudio-module-switch-on-port-available, pulseaudio-module-tunnel-sink, pulseaudio-module-bluetooth-device, pulseaudio-module-dbus-protocol, pulseaudio-module-null-source, pulseaudio-module-tunnel-source, pulseaudio-module-always-sink, pulseaudio-module-device-restore, pulseaudio-module-combine, pulseaudio-module-role-cork, pulseaudio-module-remap-sink, pulseaudio-module-virtual-source, pulseaudio-module-virtual-surround-sink, libpulse-simple0, pulseaudio-module-pipe-source, pulseaudio-lib-cli, pulseaudio-module-bluetooth-proximity, pulseaudio-module-bluetooth-policy, pulseaudio-module-pipe-sink, libpulse-mainloop-glib0, pulseaudio-module-equalizer-sink, pulseaudio-module-sine, pulseaudio-misc, pulseaudio-module-sine-source, pulseaudio-lib-protocol-simple, libpulse0, pulseaudio-module-position-event-sounds, pulseaudio-lib-bluetooth-util, pulseaudio, pulseaudio-server, pulseaudio-module-suspend-on-idle, pulseaudio-module-stream-restore, pulseaudio-module-default-device-restore, pulseaudio-module-rescue-streams, pulseaudio-module-volume-restore
+Source: None

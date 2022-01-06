@@ -1,0 +1,15 @@
+Package: iptables
+Version: 1.4.12.2-r0
+Description: Tools for managing kernel packaet filtering capabilities
+ iptables is the userspace command line program used to configure and
+ control network packet filtering code in Linux.
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2+
+Architecture: armv7a
+OE: iptables
+Homepage: http://www.netfilter.org/
+Depends: libc6 (>= 2.12)
+Recommends: kernel-module-nf-defrag-ipv4, kernel-module-nf-conntrack, kernel-module-ipt-masquerade, kernel-module-x-tables, kernel-module-nf-nat, kernel-module-nf-conntrack-ipv4, kernel-module-iptable-nat, kernel-module-ip-tables, kernel-module-iptable-filter
+Source: http://netfilter.org/projects/iptables/files/iptables-1.4.12.2.tar.bz2 file://GNUmakefile.patch file://types.h-add-defines-that-are-required-for-if_packet.patch

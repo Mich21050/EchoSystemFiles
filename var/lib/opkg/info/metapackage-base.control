@@ -1,0 +1,10 @@
+Package: metapackage-base
+Version: 1.0.463
+Section: devel
+Priority: optional
+Architecture: armv7a
+Depends: doppler-version, doppler-console-image, doppler, doppler-tidsp-1.2, doppler-atheros, doppler-kernel-1.2, spotify
+Installed-Size: 0
+Maintainer: dee-device-software@amazon.com
+Description: Metapackage for base builds.
+

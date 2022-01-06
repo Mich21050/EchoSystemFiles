@@ -1,0 +1,13 @@
+Package: sbc
+Version: 1.2-r0
+Description: SBC Audio Codec
+ Bluetooth low-complexity, subband codec (SBC) library.
+Section: libs
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2 & LGPLv2.1
+Architecture: armv7a
+OE: sbc
+Homepage: https://www.bluez.org
+Depends: libc6 (>= 2.12)
+Source: http://kernel.org/pub/linux/bluetooth/sbc-1.2.tar.xz

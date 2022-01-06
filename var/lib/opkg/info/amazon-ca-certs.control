@@ -1,0 +1,12 @@
+Package: amazon-ca-certs
+Version: 20121129-r0
+Description: amazon-ca-certs version 20121129-r0
+ Amazon CA certificates
+Section: misc
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: PROPRIETARY
+Architecture: all
+OE: amazon-ca-certs
+Homepage: https://w.amazon.com/index.php/Infosec/Internally_Signed_Certificates
+Source: file://amazon-root-ca.pem file://corporate-systems-ca.pem file://it-security-ca-g2.pem file://it-security-ca.pem

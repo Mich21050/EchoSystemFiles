@@ -1,0 +1,18 @@
+Package: libreadline5
+Version: 5.2-r8
+Description: readline version 5.2-r8
+ The GNU Readline library provides a set of functions for use by
+ applications that allow users to edit command lines as they are typed in.
+ Both Emacs and vi editing modes are available. The Readline library
+ includes  additional functions to maintain a list of previously-entered
+ command lines, to recall and perhaps reedit those   lines, and perform
+ csh-like history expansion on previous commands.
+Section: libs
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2+
+Architecture: armv7a
+OE: readline
+Homepage: unknown
+Depends: libtinfo5 (>= 5.9), libc6 (>= 2.12)
+Source: ftp://ftp.gnu.org/gnu/readline/readline-5.2.tar.gz file://configure-fix.patch file://acinclude.m4 file://fix-redundant-rpath.patch

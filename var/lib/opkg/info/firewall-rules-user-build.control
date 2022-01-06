@@ -1,0 +1,9 @@
+Package: firewall-rules-user-build
+Version: 1.0.463
+Section: devel
+Priority: optional
+Architecture: armv7a
+Installed-Size: 9
+Maintainer: dee-device-software@amazon.com
+Description: Firewall rules for user builds
+

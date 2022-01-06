@@ -1,0 +1,13 @@
+Package: task-doppler-networking
+Version: 1.0-r4
+Description: task-doppler-networking version 1.0-r4
+ Extended task to get more dependencies for doppler specific code
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: MIT
+Architecture: all
+OE: task-doppler-networking
+Homepage: unknown
+Depends: amazon-ca-certs, avahi, libupnp
+Source: None

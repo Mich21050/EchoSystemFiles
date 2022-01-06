@@ -1,0 +1,13 @@
+Package: syslog-ng
+Version: 3.2.5-r23.1
+Description: syslog-ng version 3.2.5-r23.1
+ Alternative system logger daemon
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPL LGPL
+Architecture: armv7a
+OE: syslog-ng
+Homepage: unknown
+Depends: libssl1.0.0 (>= 1.0.2f), libcrypto1.0.0 (>= 1.0.2f), libglib-2.0-0 (>= 2.32.4), libevtlog0 (>= 0.2.12), libc6 (>= 2.12)
+Source: http://www.balabit.com/downloads/files/syslog-ng/sources/3.2.5/source/syslog-ng_3.2.5.tar.gz file://upstart-syslog-ng.conf file://syslog-ng.remove-hostname-from-suppress-log.patch file://syslog-ng.conf file://initscript

@@ -1,0 +1,12 @@
+Package: gst-plugins-base
+Version: 1.2.1-r5
+Description: gst-plugins-base version 1.2.1-r5
+ Plugins for GStreamer
+Section: multimedia
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2+ & LGPLv2+
+Architecture: armv7a
+OE: gst-plugins-base
+Homepage: http://gstreamer.freedesktop.org/
+Source: http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.2.1.tar.xz file://fix-sink-gettime-deadlock.patch

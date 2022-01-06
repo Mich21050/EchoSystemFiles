@@ -1,0 +1,9 @@
+Package: libsqlite3
+Version: 3.7.17.1
+Section: devel
+Priority: optional
+Architecture: armv7a
+Installed-Size: 2881
+Maintainer: dee-device-software@amazon.com
+Description: Sqlite 3.7.17
+

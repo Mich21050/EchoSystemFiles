@@ -1,0 +1,13 @@
+Package: libcares2
+Version: 1.9.1-r1
+Description: c-ares version 1.9.1-r1
+ c-ares is a C library that resolves names asynchronously.
+Section: libs
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: MIT
+Architecture: armv7a
+OE: c-ares
+Homepage: http://daniel.haxx.se/projects/c-ares/
+Depends: libc6 (>= 2.12)
+Source: http://c-ares.haxx.se/download/c-ares-1.9.1.tar.gz

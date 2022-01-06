@@ -1,0 +1,7 @@
+/usr/local/etc/ota-pub-keys/
+/usr/local/bin/ota-update-daemon
+/usr/local/etc/ota-update.conf
+/usr/local/etc/ota-pub-keys/codesigner_key1.pub
+/etc/init/ota-update-daemon.conf
+/usr/local/bin/ota-update
+/usr/local/etc/ota-pub-keys/codesigner_key2.pub

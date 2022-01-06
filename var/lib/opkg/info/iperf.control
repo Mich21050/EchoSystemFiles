@@ -1,0 +1,14 @@
+Package: iperf
+Version: 2.0.5-r0
+Description: iperf version 2.0.5-r0
+ Iperf is a tool to measure maximum TCP bandwidth, allowing the tuning of
+ various parameters and UDP characteristics
+Section: console/network
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: NewBSD
+Architecture: armv7a
+OE: iperf
+Homepage: http://dast.nlanr.net/Projects/Iperf/
+Depends: libgcc1 (>= 4.5), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Source: http://downloads.sourceforge.net/iperf/iperf-2.0.5.tar.gz

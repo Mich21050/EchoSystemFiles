@@ -1,0 +1,9 @@
+Package: doppler-misc
+Version: 1.0.0
+Section: devel
+Priority: optional
+Architecture: armv7a
+Installed-Size: 34
+Maintainer: dee-device-software@amazon.com
+Description: Miscellaeneous utilites for doppler
+

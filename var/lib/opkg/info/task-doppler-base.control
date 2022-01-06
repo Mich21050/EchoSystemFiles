@@ -1,0 +1,13 @@
+Package: task-doppler-base
+Version: 1.0-r1
+Description: task-doppler-base version 1.0-r1
+ Basic task to get a device booting
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: MIT
+Architecture: all
+OE: task-doppler-base
+Homepage: unknown
+Depends: mtd-utils, devmem2, ethtool, alsa-lib, module-init-tools, tcpdump, alsa-utils-aplay
+Source: None

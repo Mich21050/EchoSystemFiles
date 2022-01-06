@@ -1,0 +1,14 @@
+Package: libcurl5
+Version: 7.33.0-r0
+Description: curl version 7.33.0-r0
+ Command line tool and library for client-side URL transfers.
+Section: console/network
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: MIT
+Architecture: armv7a
+OE: curl
+Homepage: http://curl.haxx.se/
+Depends: libssl1.0.0 (>= 1.0.2f), libcrypto1.0.0 (>= 1.0.2f), libz1 (>= 1.2.6), libcares2 (>= 1.9.1), libc6 (>= 2.12)
+Recommends: curl-certs
+Source: git://iot-gerrit/echo/open-source/libcurl;protocol=ssh;branch=master

@@ -1,0 +1,10 @@
+Package: doppler-core
+Version: 1.2.463
+Section: devel
+Priority: optional
+Architecture: armv7a
+Depends: kindle-d, task-doppler-boost, protobuf, libcurl5, libdbus-1-3, libstdc++6
+Installed-Size: 4414
+Maintainer: dee-device-software@amazon.com
+Description: Doppler Base
+

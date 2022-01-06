@@ -1,0 +1,10 @@
+Package: libpryon
+Version: 2.0.463
+Section: devel
+Priority: optional
+Architecture: armv7a
+Depends: libarchive2
+Installed-Size: 157503
+Maintainer: dee-device-software@amazon.com
+Description: Pryon ASR Engine
+

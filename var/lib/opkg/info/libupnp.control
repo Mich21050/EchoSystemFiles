@@ -1,0 +1,16 @@
+Package: libupnp
+Version: 1.6.19-r2
+Description: Portable SDK for UPnP Devices
+ The portable SDK for UPnP* Devices (libupnp) provides developers with an
+ API and open source code for building control points, devices, and
+ bridges that are compliant with Version 1.0 of the Universal Plug and
+ Play Device Architecture Specification.
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: BSD
+Architecture: armv7a
+OE: libupnp
+Homepage: http://pupnp.sourceforge.net/
+Depends: libc6 (>= 2.12)
+Source: git://iot-gerrit/echo/open-source/libupnp.git;branch=master;protocol=ssh

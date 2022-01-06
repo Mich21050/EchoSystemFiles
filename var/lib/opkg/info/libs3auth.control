@@ -1,0 +1,10 @@
+Package: libs3auth
+Version: 0.2.463
+Section: devel
+Priority: optional
+Architecture: armv7a
+Depends: kindle-d, openssl
+Installed-Size: 274
+Maintainer: dee-device-software@amazon.com
+Description: Amazon S3 Request Authentication library
+

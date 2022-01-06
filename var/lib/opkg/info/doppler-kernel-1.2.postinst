@@ -1,0 +1,95 @@
+#!/bin/sh
+#
+# Copyright (c) 2013 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+#
+# PROPRIETARY/CONFIDENTIAL
+#
+# Use is subject to license terms.
+
+# Binaries
+MOUNTPOINT=/bin/mountpoint
+LOGGER=/usr/bin/logger
+BOARDQUERY=/usr/local/bin/boardquery
+
+# Diagnostic info
+PACKAGE_NAME="doppler-kernel"
+
+# JFFS2 Block Device:
+# - Major = 31
+# - Minor = <Partition Ordinal>
+#
+# JFFS2 Char Device:
+# - Major = 90
+# - Minor = <Partition Ordinal * 2> OR for read only: <Partition Ordinal * 2 + 1>
+#
+# E.g. 31:12 is /dev/mtdblock12, 90:15 is /dev/mtd7ro
+
+# Kernel A
+KERNEL_A_MTD="/dev/mtd9"
+# /dev/mtdblock10
+ROOTFS_A_DEVICE="31:10"
+# Kernel B
+KERNEL_B_MTD="/dev/mtd11"
+# /dev/mtdblock12
+ROOTFS_B_DEVICE="31:12"
+
+# Default root directory
+ROOT_DIR="/"
+# Image file
+IMAGE_FILE="/boot/uImage"
+
+LOG_INFO () {
+    ${LOGGER} -s -t "opkg[$$]" -p local4.info "I ${PACKAGE_NAME}::$@"
+}
+
+LOG_ERROR() {
+    ${LOGGER} -s -t "opkg[$$]" -p local4.error "E ${PACKAGE_NAME}::$@"
+}
+
+# If in a sysroot, use the suggested root dir as reference
+if [ "x$D" != "x" ]; then
+    ROOT_DIR="$D"
+fi
+
+if ! ${BOARDQUERY} has_NAND; then
+    LOG_INFO "No NAND devices present; Nothing further to do."
+    exit 0
+fi
+
+# Read the major and minor device number for the mountpoint of root for this process
+# If for some reason detection fails, we will default to Kernel A
+# Note: in a chroot, this will return the partition containing the chroot root directory.
+DEVICE_NUMBER="$(${MOUNTPOINT} -d ${ROOT_DIR})" || (
+    LOG_ERROR "Cannot determine mountpoint, aborting."
+    exit 1
+)
+
+# Detect the kernel partition relative to the rootfs partition
+# Default to Kernel A
+KERNEL_MTD="${KERNEL_A_MTD}"
+
+if [ "${DEVICE_NUMBER}" = "${ROOTFS_A_DEVICE}" ]; then
+    KERNEL_MTD="${KERNEL_A_MTD}"
+elif [ "${DEVICE_NUMBER}" = "${ROOTFS_B_DEVICE}" ]; then
+    KERNEL_MTD="${KERNEL_B_MTD}"
+else
+    LOG_INFO "Couldn't discover Kernel partition for '${ROOT_DIR}'. Falling back to default."
+fi
+
+if [ ! -e "${KERNEL_MTD}" ]; then
+    LOG_ERROR "Cannot find kernel mtd partition: ${KERNEL_MTD}"
+    exit 1
+fi
+
+if [ ! -e "${ROOT_DIR}${IMAGE_FILE}" ]; then
+    LOG_ERROR "Cannot find kernel image: ${ROOT_DIR}${IMAGE_FILE}"
+    exit 1
+fi
+
+LOG_INFO "flashing kernel to ${KERNEL_MTD}"
+
+# Write Kernel
+/usr/sbin/flash_erase -q ${KERNEL_MTD} 0 0
+/usr/sbin/nandwrite ${KERNEL_MTD} "${ROOT_DIR}${IMAGE_FILE}" -p
+
+exit 0

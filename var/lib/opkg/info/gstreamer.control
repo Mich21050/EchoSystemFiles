@@ -1,0 +1,15 @@
+Package: gstreamer
+Version: 1.2.1-r4
+Description: GStreamer multimedia framework
+ GStreamer is a multimedia framework for encoding and decoding video and
+ sound. It supports a wide range of formats including mp3, ogg, avi, mpeg
+ and quicktime.
+Section: multimedia
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: LGPLv2+
+Architecture: armv7a
+OE: gstreamer
+Homepage: http://gstreamer.freedesktop.org/
+Depends: libffi5 (>= 3.0.10), libglib-2.0-0 (>= 2.32.4), libz1 (>= 1.2.6), libc6 (>= 2.12)
+Source: http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.2.1.tar.xz file://add_underflow_error_type.patch file://add_stream_start_error_type.patch file://stream_detection_on_discontinuity.patch

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ -d $D/var/volatile ] ; then
+    rm -rf $D/var/volatile
+    ln -sf ../mnt/volatile $D/var/volatile
+fi
+
+if [ -L $D/var/log ] ; then
+    rm -f $D/var/log
+    mkdir -p $D/var/log
+fi

@@ -1,0 +1,10 @@
+Package: doppler-console-image
+Version: 1.0.0
+Section: devel
+Priority: optional
+Architecture: armv7a
+Depends: task-core-boot, task-doppler-base, task-doppler-console, task-doppler-networking, task-doppler-pulseaudio, task-doppler-boost, udev, upstart, upstart-sysvcompat, initscripts, opkg, iperf, openssl, dnsmasq, evtest, python-core, python-re, python-readline, ofono, python-json, python-codecs, python-dbus, python-netserver, python-pygobject, python-subprocess, python-threading, syslog-ng, gst-plugins-good, iw, iptables, ldd, bash, openntpd, ntpdate, civetweb
+Installed-Size: 0
+Maintainer: dee-device-software@amazon.com
+Description: Vanilla deciBel console image for Doppler
+

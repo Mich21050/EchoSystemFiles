@@ -1,0 +1,13 @@
+Package: libgstmpegts-1.0-0
+Version: 1.2.1-r7
+Description: gst-plugins-bad version 1.2.1-r7
+ gstreamer gstmpegts-1.0 library
+Section: multimedia
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2+ & LGPLv2+ & LGPLv2.1+ 
+Architecture: armv7a
+OE: gst-plugins-bad
+Homepage: http://gstreamer.freedesktop.org/
+Depends: libffi5 (>= 3.0.10), libglib-2.0-0 (>= 2.32.4), gstreamer (>= 1.2.1), libc6 (>= 2.12)
+Source: http://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.2.1.tar.xz

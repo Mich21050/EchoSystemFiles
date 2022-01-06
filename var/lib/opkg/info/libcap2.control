@@ -1,0 +1,13 @@
+Package: libcap2
+Version: 2.22-r3
+Description: libcap version 2.22-r3
+ support for getting/setting POSIX.1e capabilities
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: BSD | GPLv2
+Architecture: armv7a
+OE: libcap
+Homepage: http://sites.google.com/site/fullycapable/
+Depends: libc6 (>= 2.12)
+Source: http://kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.22.tar.bz2

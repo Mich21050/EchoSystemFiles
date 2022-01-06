@@ -1,0 +1,13 @@
+Package: boost-serialization
+Version: 1.53.0-r4.0
+Description: boost version 1.53.0-r4.0
+ Free peer-reviewed portable C++ source libraries
+Section: libs
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: BSL-1.0 & MIT & Python-2.0
+Architecture: armv7a
+OE: boost
+Homepage: http://www.boost.org/
+Depends: libgcc1 (>= 4.5), libc6 (>= 2.12), libstdc++6 (>= 4.5)
+Source: http://downloads.sourceforge.net/boost/boost_1_53_0.tar.bz2 file://arm-intrinsics.patch

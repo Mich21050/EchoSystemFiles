@@ -1,0 +1,10 @@
+Package: spotify
+Version: 1.0.463
+Section: devel
+Priority: optional
+Architecture: armv7a
+Depends: gstreamer, gst-plugins-base-app, gst-plugins-base-playback, gst-plugins-good-pulse, gst-plugins-good-autodetect, libavahi-common3, libavahi-client3, libavahi-glib1
+Installed-Size: 4113
+Maintainer: dee-device-software@amazon.com
+Description: Spotify for Doppler
+

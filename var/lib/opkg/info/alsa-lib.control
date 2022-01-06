@@ -1,0 +1,13 @@
+Package: alsa-lib
+Version: 1.0.25-r1
+Description: alsa-lib version 1.0.25-r1
+ Alsa sound library
+Section: libs/multimedia
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: LGPLv2.1 & GPLv2+
+Architecture: armv7a
+OE: alsa-lib
+Homepage: http://www.alsa-project.org
+Depends: libasound2 (>= 1.0.25), libc6 (>= 2.12)
+Source: ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.0.25.tar.bz2 file://fix-tstamp-declaration.patch

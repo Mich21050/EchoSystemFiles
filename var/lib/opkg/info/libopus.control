@@ -1,0 +1,9 @@
+Package: libopus
+Version: 1.1.0
+Section: devel
+Priority: optional
+Architecture: armv7a
+Installed-Size: 4239
+Maintainer: dee-device-software@amazon.com
+Description: opus audio compression library
+

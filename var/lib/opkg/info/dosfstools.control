@@ -1,0 +1,13 @@
+Package: dosfstools
+Version: 2.11-r4
+Description: DOS FAT Filesystem Utilities
+ DOS FAT Filesystem Utilities
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2
+Architecture: armv7a
+OE: dosfstools
+Homepage: unknown
+Depends: libc6 (>= 2.12)
+Source: ftp://ftp.uni-erlangen.de/pub/Linux/LOCAL/dosfstools/dosfstools-2.11.src.tar.gz file://mkdosfs-bootcode.patch file://mkdosfs-dir.patch file://alignment_hack.patch file://msdos_fat12_undefined.patch file://dosfstools-msdos_fs-types.patch file://include-linux-types.patch file://nofat32_autoselect.patch file://fix_populated_dosfs_creation.patch

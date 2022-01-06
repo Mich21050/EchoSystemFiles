@@ -1,0 +1,13 @@
+Package: task-doppler-boost
+Version: 1.0-r2
+Description: task-doppler-boost version 1.0-r2
+ Extended task to install boost related pacakges for doppler
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: MIT
+Architecture: all
+OE: task-doppler-boost
+Homepage: unknown
+Depends: libboost-iostreams1.53.0, libboost-system1.53.0, libboost-thread1.53.0, libboost-date-time1.53.0, libboost-program-options1.53.0, libboost-filesystem1.53.0, libboost-signals1.53.0, libboost-chrono1.53.0, libboost-regex1.53.0, boost-serialization, libboost-atomic1.53.0
+Source: None

@@ -1,0 +1,14 @@
+Package: libz1
+Version: 1.2.6-r1
+Description: Zlib Compression Library
+ Zlib is a general-purpose, patent-free, lossless data compression library
+ which is used by many different programs.
+Section: libs
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: Zlib
+Architecture: armv7a
+OE: zlib
+Homepage: http://zlib.net/
+Depends: libc6 (>= 2.12)
+Source: http://www.zlib.net/zlib-1.2.6.tar.bz2 file://remove.ldconfig.call.patch

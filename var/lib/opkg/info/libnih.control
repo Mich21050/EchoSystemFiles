@@ -1,0 +1,13 @@
+Package: libnih
+Version: 1.0.3-r2-4ubuntu16
+Description: libnih version 1.0.3-r2-4ubuntu16
+ NIH Utility Library
+Section: base
+Priority: optional
+Maintainer: deciBel Developers <dee-device-software@amazon.com>
+License: GPLv2
+Architecture: armv7a
+OE: libnih
+Homepage: https://launchpad.net/libnih
+Depends: libdbus-1-3 (>= 1.4.16), libexpat1 (>= 2.0.1), libc6 (>= 2.12)
+Source: https://launchpad.net/libnih/1.0/1.0.3/+download/libnih-1.0.3.tar.gz;name=orig_source https://launchpad.net/ubuntu/raring/+source/libnih/1.0.3-4ubuntu16/+files/libnih_1.0.3-4ubuntu16.diff.gz;name=patch_4ubuntu16;patch=1

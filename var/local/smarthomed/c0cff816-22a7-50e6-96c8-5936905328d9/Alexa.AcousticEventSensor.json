@@ -1,0 +1,17 @@
+{
+	"overallMode":	"DISABLED",
+	"detectionModes":	{
+		"glassBreak":	{
+			"overallMode":	"DISABLED",
+			"cloudVerificationMode":	"DISABLED"
+		},
+		"humanPresence":	{
+			"overallMode":	"DISABLED",
+			"cloudVerificationMode":	"DISABLED"
+		},
+		"smokeAlarm":	{
+			"overallMode":	"DISABLED",
+			"cloudVerificationMode":	"DISABLED"
+		}
+	}
+}
